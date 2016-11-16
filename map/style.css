@@ -6,11 +6,11 @@
         padding: 0;
       }
       #map {
-        height: 90%;
-        width: 90%;
+        height: 100%;
+        width: 100%;
         position: absolute;
-        top: 5%;
-        left: 5%;
+        top: 0%;
+        left: 0%;
       }
       .fouroneone{
         display: inline-block;
