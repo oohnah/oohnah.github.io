@@ -5,7 +5,8 @@ body{
 	font-family: 'Roboto', sans-serif;
 	padding: 0px;
 	margin: 0px;
-	background-image: url("halftone.svg");
+	background-color: #F7F7F7;
+	color: #333333;
 
 }
 
@@ -13,6 +14,11 @@ a{
 	color: #663CA6;
 	text-decoration: none;
 	text-transform: uppercase;
+	transition: .75s;
+}
+
+a:hover{
+ 	color: #333333;
 }
 
 .now a{
@@ -22,8 +28,8 @@ a{
 
 h1{
 	text-transform: uppercase;
-	//border-bottom: 5px solid #333333;
-	//border-right: 5px solid #333333;
+	/*//border-bottom: 5px solid #333333;
+	//border-right: 5px solid #333333;*/
 	box-shadow: 5px 5px 0px #333333;
 	border-radius: 10px;
 	width: 500px;
@@ -37,7 +43,16 @@ h2{
 	color: #663CA6;
 	letter-spacing: 2px;
 	margin: 10px;
+	font-size: 24px;
 }
+
+/*"abridged version" header*/
+.h3{
+	letter-spacing: 1px;
+	margin: 00px;
+	font-size: 18px;
+}
+
 #navbar{
 	position: fixed;
 	top: 10px;
@@ -92,6 +107,20 @@ h2{
 #portfolio p{
 	margin: 10px;
 }
+
+#main{
+	position: relative;
+	width: 80%;
+	padding: 10%;
+	padding-top: 5%;
+}
+
+#main p{
+	font-size: 14px;
+	margin: 10px;
+	margin-bottom: 48px;
+}
+
 /* i can't remember what these are for but i don't think they do anything???
 
 #illustration{
@@ -124,5 +153,13 @@ h2{
 	box-shadow: 5px 5px 0px #333333;
 
 }
+
+/*contact icons*/
+.contact{
+	font-size: 36px;
+	margin: 20px;
+	margin-left: 0px;
+}
+
 
 
