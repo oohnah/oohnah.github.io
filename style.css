@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 body{
-	font-size: 12px;
+	font-size: 14px;
 	font-family: 'Roboto', sans-serif;
 	padding: 0px;
 	margin: 0px;
@@ -116,7 +116,6 @@ h2{
 }
 
 #main p{
-	font-size: 14px;
 	margin: 10px;
 	margin-bottom: 48px;
 }
@@ -160,6 +159,9 @@ h2{
 	margin: 20px;
 	margin-left: 0px;
 }
+
+
+
 
 
 
