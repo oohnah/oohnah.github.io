@@ -379,8 +379,18 @@ var data={
       "icon":"mapMarker07.png",
       "country":"Nepal",
     },
-
     {
+      "name":"Ashley Cavignano BHS&#39;16",
+      "major":"Co-op in Himalayan villages, Nepal",
+      "about":"<ul><li>Nursing Major</li><li>Prepared for and pro­vided care in Nepal with Himalayan HealthCare—a non­profit that delivers care and edu­ca­tion to poor vil­lagers in the moun­tains of Nepal.</li><li>&quot;It was a really good expe­ri­ence for me to see the best care in the world and then be in a remote place where I relied on my own assess­ment skills.&quot;</li></ul>",
+      "image":"pics/ashley-cavignano.jpg",
+      "lat":44.0000,
+      "lng":18.0000,
+      "icon":"mapMarker07.png",
+      "country":"Nepal",
+    },
+
+    /*{
       "name":"Sarah Lombardo SSH&#39;15",
       "major":"Co-op in Bosnia",
       "about":"<ul><li>International Affairs Major</li><li>Created a document which mapped out different issues in the next year which the Office of the High Representative would be required to address</li><li>&quot;I’m a little unsure about the future, like everyone, but I really think I focused myself during my co-op in Bosnia.&quot;</li></ul>",
@@ -389,7 +399,7 @@ var data={
       "lng":18.0000,
       "icon":"mapMarker07.png",
       "country":"Bosnia",
-    },
+    },*/
     {
       "name":"Gabby Jockers B&#39;13",
       "major":"Co-op in Beirut, Lebanon",
