@@ -384,7 +384,7 @@ var data={
       "name":"Sarah Lombardo SSH&#39;15",
       "major":"Co-op in Bosnia",
       "about":"<ul><li>International Affairs Major</li><li>Created a document which mapped out different issues in the next year which the Office of the High Representative would be required to address</li><li>&quot;I’m a little unsure about the future, like everyone, but I really think I focused myself during my co-op in Bosnia.&quot;</li></ul>",
-      "image":"pics/sarah-lombardo.jpg",
+      "image":"pics/sarahlombardo.jpg",
       "lat":44.0000,
       "lng":18.0000,
       "icon":"mapMarker07.png",
