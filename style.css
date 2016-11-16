@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body{
+	font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+	padding: 0px;
+	margin: 0px;
+	background-image: url("halftone.svg");
+
+}
+
+a{
+	color: #663CA6;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.now a{
+	color: #777;
+	text-decoration: underline;
+}
+
+h1{
+	text-transform: uppercase;
+	//border-bottom: 5px solid #333333;
+	//border-right: 5px solid #333333;
+	box-shadow: 5px 5px 0px #333333;
+	border-radius: 10px;
+	width: 500px;
+	padding: 15px;
+	color: #663CA6;
+	letter-spacing: 5px;
+	font-size: 60px;
+}
+h2{
+	text-transform: uppercase;
+	color: #663CA6;
+	letter-spacing: 2px;
+	margin: 10px;
+}
+#navbar{
+	position: fixed;
+	top: 0px;
+	z-index: 10;
+}
+#intro{
+	width: 100%;
+	height: 500px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	background-color: #F7F7F7;
+	padding-top: 100px;
+	border-bottom: 50px solid #663CA6;
+}
+#intro p{
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+#portfolio{
+	position: relative;
+	width: 80%;
+	background-color: #F7F7F7;
+	padding: 10%;
+}
+
+#portfolio p{
+	margin: 10px;
+}
+
+#illustration{
+	position: relative;
+	width: 100%;
+	background-color: #f5f5f5;
+}
+#video{
+	position: relative;
+	width: 100%;
+	background-color: #F7F7F7;
+}
+.portpiece{
+	display: inline-block;
+	width: 300px;
+	margin: 10px;
+}
+.ppimg{
+	width: 100%;
+}
