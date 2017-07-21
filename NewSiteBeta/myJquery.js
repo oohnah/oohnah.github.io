@@ -16,7 +16,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 
 	window.sr = ScrollReveal({reset: true});
-	sr.reveal('.revealable',{duration: 1000, delay: 500, origin: 'bottom'});
+	sr.reveal('.revealable',{duration: 1000, delay: 500, origin: 'bottom', scale: 1});
 
 });
 
