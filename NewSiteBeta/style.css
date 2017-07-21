@@ -3,6 +3,12 @@ body{
 
 }
 
+/*custom font*/
+@font-face {
+	font-family: moon;
+	src: url('MoonTypeface/Moon_Light.otf');
+}
+
 /*landing and logo*/
 
 #titleslide{
@@ -23,16 +29,16 @@ body{
 	margin-top: 100px;
 }
 
-/*illustration bit*/
+/*explore my work bit*/
 
-#illustrationslide{
+#workslide{
 	position: absolute;
 	top: 100%;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	background-color: #EEEEEE;
+	background-color: #FFFFFF;
 	//background: -webkit-linear-gradient(#FFCCCC, #9999CC); /* For Safari 5.1 to 6.0 */
     //background: -o-linear-gradient(#FFCCCC, #9999CC); /* For Opera 11.1 to 12.0 */
     //background: -moz-linear-gradient(#FFCCCC, #9999CC); /* For Firefox 3.6 to 15 */
@@ -40,21 +46,12 @@ body{
 
 }
 
-.illustration{
-	width: 70%;
-	margin-top: 7%;
-	transition: .7s;
-
+#worktext{
+	color: #9999CC;
+	font-family: moon;
+	margin-top: 50px;
+	font-size: 36px;
 }
-
-.illustration:hover{
-	width: 80%;
-	margin-top: 5%;
-	transition: .7s;
-
-}
-
-
 
 
 
