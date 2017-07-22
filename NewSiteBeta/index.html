@@ -7,6 +7,7 @@
 <body>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="myJquery.js"></script>
+<script type="text/javascript" src="aboutsearch.js"></script>
 
 <div id="titleslide">
 <img src="images/personal_logo-01.png" id="logo" class="logo">
@@ -23,6 +24,32 @@
 
 
 </p>
+</div>
+
+
+<div id="aboutslide">
+	
+	<div id="about" class="revealable">
+		<h1>Who Am I?</h1>
+		<p id="abouttext">
+			Hello! My name is Amelia and I'm a rising senior at Northeastern University, majoring in Digital Art and Interactive Media. Right now I'm exploring a variety of creative fields, including animation, video, and web design. I love trying new things. Sometimes I wish I had eight arms like an octopus to do them all! Aside from art and design, I enjoy dancing, traveling, reading comic books, and playing the ukulele!			
+		</p>
+		
+		<br>
+
+		<h1>Still Curious?</h1>
+		<p>
+			Find out about my favorite  
+			
+			<input type="text" name="favorite" id="textbox" onKeydown="Javascript: if (event.keyCode==13) favorite();"> 
+			<a href="#main" onclick="favorite()" id="go">go!</a>
+			<br><br>
+			<span id="answer"></span>
+		</p>
+
+	</div>
+	
+
 </div>
 
 

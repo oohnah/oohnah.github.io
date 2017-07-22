@@ -1,11 +1,3 @@
-$( document ).ready(function() {
-        $( "a" ).click(function( event ) {
-            alert( "Hello, jquery!" );
-            event.preventDefault();
-        });
-    });
-
-
 $(document).ready(function() {
     $('#logo')
         .animate({opacity: 0,}, 0)
@@ -13,13 +5,19 @@ $(document).ready(function() {
         .animate({opacity: 1}, 1000);
 });
 
-
+/*
 $(document).ready(function() {
 
 	window.sr = ScrollReveal({reset: true});
 	sr.reveal('.revealable',{duration: 1500, delay: 500, origin: 'bottom', scale: 1}, 750);
-
+	sr.reveal('.revealabout');
 });
+*/
+$(document).ready(function(){
+	window.sr = ScrollReveal();
+	sr.reveal('.revealable', {delay: 800, scale: 1});
+	sr.reveal('.revealabout');	
+})
 
 
 
