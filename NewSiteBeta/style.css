@@ -27,6 +27,7 @@ body{
 
 #logo{
 	margin-top: 100px;
+	width: 400px;
 }
 
 /*explore my work bit*/
@@ -53,5 +54,15 @@ body{
 	font-size: 36px;
 }
 
+.workicons{
+	width: 250px;
+	display: inline-block;
+	margin: 5%;
+	transition: .75s;
+}
+
+.workicons:hover{
+	width: 275px;
+}
 
 

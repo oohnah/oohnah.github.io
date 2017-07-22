@@ -13,10 +13,11 @@ $(document).ready(function() {
         .animate({opacity: 1}, 1000);
 });
 
+
 $(document).ready(function() {
 
 	window.sr = ScrollReveal({reset: true});
-	sr.reveal('.revealable',{duration: 1000, delay: 500, origin: 'bottom', scale: 1});
+	sr.reveal('.revealable',{duration: 1500, delay: 500, origin: 'bottom', scale: 1}, 750);
 
 });
 
