@@ -17,7 +17,7 @@ $(document).ready(function(){
 	window.sr = ScrollReveal();
 	sr.reveal('.revealable', {delay: 800, scale: 1});
 	sr.reveal('.revealabout');	
-})
+});
 
 
 

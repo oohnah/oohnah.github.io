@@ -4,7 +4,12 @@ body{
 
 }
 
-/*font styles*/
+a{
+	border: none;
+	text-decoration: none;
+}
+
+/*-----------------------------font styles------------------------*/
 @font-face {
 	font-family: 'moon';
 	src: url('MoonTypeface/Moon_Light.otf');
@@ -17,6 +22,14 @@ h1{
 	font-weight: normal;
 	font-size: 36px;
 
+}
+
+/*--------------------------content framing box------------------------*/
+.contents{
+	margin-top: 50px;
+	margin-bottom: 100px;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 
@@ -79,7 +92,7 @@ h1{
 }
 
 /*----------------about me section--------------------------------------------*/
-
+/*background box*/
 #aboutslide{
 	background-color: #9999CC;
 	background-image: url('images/polka_dot.svg');
@@ -97,15 +110,7 @@ h1{
 
 }
 
-#about{
-	margin-top: 50px;
-	margin-bottom: 100px;
-}
 
-#abouttext{
-	margin-left: 10%;
-	margin-right: 10%;
-}
 
 #go{
 	background-color: #FFFFFF;
@@ -134,5 +139,62 @@ h1{
 
 /*------------------------resume-----------------------------------*/
 
+#resumeslide{
+	position: relative;
+	left: 0;
+	top: 0;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	background-color: #FFFFFF;
+}
 
+#resumeslide h1{
+	color: #FFCCCC;
+}
+
+.workedat{
+	width: 25%;
+	display: inline-block;
+	margin: 20px;
+	vertical-align: middle;
+	transition: .75s;
+}
+
+.workedat:hover{
+	width: 26%;
+}
+
+.toolused{
+	width: 12%;
+	display: inline-block;
+	margin: 1%;
+	vertical-align: middle;
+	transition: .75s;
+}
+
+#resumebutton{
+	padding: 10px;
+	background-color: #FFCCCC;
+	border-radius: 3px;
+	transition: .75s;
+	font-family: 'moon';
+	color: #FFFFFF;
+	font-size: 36px;
+
+}
+
+#resumebutton:hover{
+	background-color: #9999CC;
+}
+
+.tooltipster-sidetip.tooltipster-light.tooltipster-light-customized .tooltipster-box {
+	background-color: #FFFFFF;
+}
+
+.tooltipster-sidetip.tooltipster-light.tooltipster-light-customized .tooltipster-content {
+	font-family: 'Montserrat';
+	color: #FFCCCC;
+}
 

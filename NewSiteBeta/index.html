@@ -3,11 +3,32 @@
 <head>
 	<title>Amelia Oon | Home</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+<!--Jquery, Plugins, etc.-->
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="myJquery.js"></script>
 <script type="text/javascript" src="aboutsearch.js"></script>
+<link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
+<link rel="stylesheet" type="text/css" href="tooltipster-sideTip-light.min.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+<script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('.toolused').tooltipster({
+			    theme: ['tooltipster-light', 'tooltipster-light-customized']
+            });
+        });
+    </script>	
+
+</head>
+
+
+
+<body>
+
+
+<!--start content!-->
 
 <div id="titleslide">
 <img src="images/personal_logo-01.png" id="logo" class="logo">
@@ -26,31 +47,81 @@
 </p>
 </div>
 
-
+<!--.............................about...................................-->
 <div id="aboutslide">
 	
-	<div id="about" class="revealable">
-		<h1>Who Am I?</h1>
-		<p id="abouttext">
-			Hello! My name is Amelia and I'm a rising senior at Northeastern University, majoring in Digital Art and Interactive Media. Right now I'm exploring a variety of creative fields, including animation, video, and web design. I love trying new things. Sometimes I wish I had eight arms like an octopus to do them all! Aside from art and design, I enjoy dancing, traveling, reading comic books, and playing the ukulele!			
-		</p>
-		
+	<div class="contents">
+		<div class="revealable">
+			<h1>Who Am I?</h1>
+			<p>
+				Hello! My name is Amelia and I'm a rising senior at Northeastern University, majoring in Digital Art and Interactive Media. Right now I'm exploring a variety of creative fields, including animation, video, and web design. I love trying new things. Sometimes I wish I had eight arms like an octopus to do them all! Aside from art and design, I enjoy dancing, traveling, reading comic books, and playing the ukulele!			
+			</p>
+		</div><!--end revealable-->
 		<br>
+		<div class="revealable">
+			<h1>Still Curious?</h1>
+			<p>
+				Find out about my favorite  
+				
+				<input type="text" name="favorite" id="textbox" onKeydown="Javascript: if (event.keyCode==13) favorite();"> 
+				<a href="#main" onclick="favorite()" id="go">go!</a>
+				<br><br>
+				<span id="answer"></span>
+			</p>
+		</div><!--end revealable-->
 
-		<h1>Still Curious?</h1>
-		<p>
-			Find out about my favorite  
-			
-			<input type="text" name="favorite" id="textbox" onKeydown="Javascript: if (event.keyCode==13) favorite();"> 
-			<a href="#main" onclick="favorite()" id="go">go!</a>
-			<br><br>
-			<span id="answer"></span>
-		</p>
-
-	</div>
+	</div><!--end #about-->
 	
 
-</div>
+</div><!--end #aboutslide-->
+
+
+<!--...........................resume......................................-->
+<div id="resumeslide">
+	<div class="contents">
+
+		<div class="revealable">
+			<h1>
+				Places I've Worked
+			</h1>
+			<a href="http://kyc-chain.com/">
+				<img src="images/kyc-chain-logo.png" class="workedat">
+			</a>
+			<a href="https://www.wayfair.com/">
+				<img src="images/wayfair-logo.jpg" class="workedat">
+			</a>
+			<a href="https://www.northeastern.edu/">
+				<img src="images/neu-logo.png" class="workedat">
+			</a>
+
+		</div><!--end revealable-->
+		<br><br>
+		<div class="revealable">
+			<h1>
+				Tools I've used
+			</h1>
+			<p>
+				<img src="images/tools-icons-01.png" class="toolused" title="Photoshop">
+				<img src="images/tools-icons-02.png" class="toolused" title="Illustrator">
+				<img src="images/tools-icons-03.png" class="toolused" title="InDesign">
+				<img src="images/tools-icons-04.png" class="toolused" title="Premiere Pro">
+				<img src="images/tools-icons-05.png" class="toolused" title="After Effects">
+				<img src="images/tools-icons-06.png" class="toolused" title="HTML5/CSS3">
+			</p>
+		</div><!--end revealable-->
+		<br><br>
+		<div class="revealable">
+			<a href="resumes/Resume_Summer_2017_Colorv3.pdf" id="resumebutton">
+				view resume
+			</a>
+		</div><!--end revealable-->
+
+
+
+	</div><!--end .contents-->
+</div><!--end #resumeslide-->
+
+
 
 
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
