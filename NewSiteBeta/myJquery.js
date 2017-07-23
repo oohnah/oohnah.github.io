@@ -19,6 +19,15 @@ $(document).ready(function(){
 	sr.reveal('.revealabout');	
 });
 
+$(document).ready(function() {
+    $('.toolused').tooltipster({
+	    theme: ['tooltipster-light', 'tooltipster-light-customized']
+    });
+});
 
-
+$(document).ready(function() {
+    $('.contact').tooltipster({
+	    theme: ['tooltipster-light', 'tooltipster-light-customized']
+    });
+});
 

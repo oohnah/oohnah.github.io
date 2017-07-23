@@ -47,6 +47,7 @@ h1{
     background: -o-linear-gradient(#9999CC, #FFCCCC); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#9999CC, #FFCCCC); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#9999CC, #FFCCCC); /* Standard syntax */
+	background-attachment: fixed;
 }
 
 #logo{
@@ -55,7 +56,7 @@ h1{
 	width: 400px;
 }
 
-/*------------explore my work bit-----------------------------------------------------*/
+/*------------explore my work section-----------------------------------------------------*/
 
 #workslide{
 	position: relative;
@@ -77,6 +78,7 @@ h1{
 	color: #9999CC;
 	font-family: 'moon';
 	margin-top: 50px;
+	margin-bottom: 0;
 	font-size: 36px;
 }
 
@@ -85,6 +87,7 @@ h1{
 	display: inline-block;
 	margin: 5%;
 	transition: .75s;
+	margin-bottom: 100px;
 }
 
 .workicons:hover{
@@ -96,6 +99,7 @@ h1{
 #aboutslide{
 	background-color: #9999CC;
 	background-image: url('images/polka_dot.svg');
+	background-attachment: fixed;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	color: #FFFFFF;
@@ -137,7 +141,7 @@ h1{
 	padding: 5px;
 }
 
-/*------------------------resume-----------------------------------*/
+/*------------------------resume section-----------------------------------*/
 
 #resumeslide{
 	position: relative;
@@ -187,14 +191,46 @@ h1{
 
 #resumebutton:hover{
 	background-color: #9999CC;
+	font-size: 38px;
 }
 
 .tooltipster-sidetip.tooltipster-light.tooltipster-light-customized .tooltipster-box {
 	background-color: #FFFFFF;
+	padding: 2px;
+	border-radius: 3px;
 }
 
 .tooltipster-sidetip.tooltipster-light.tooltipster-light-customized .tooltipster-content {
 	font-family: 'Montserrat';
+	font-size: 22px;
 	color: #FFCCCC;
+}
+
+/*--------------------------contact section---------------------------------*/
+#contactslide{
+	background-color: #FFCCCC;
+	background-image: url('images/polka_dot_pink.svg');
+	background-attachment: fixed;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	color: #FFFFFF;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 18px;
+}
+.contact{
+	font-size: 100px;
+	color: #FFFFFF;
+	margin: 24px;
+	transition: .75s;
+}
+
+.contact:hover{
+	font-size: 110px;
 }
 
