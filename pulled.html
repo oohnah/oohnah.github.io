@@ -1,49 +1,62 @@
-<!DOCTYPE HTML>
+
+<!DOCTYPE html>
 <html>
+<head>
+	<title>Amelia Oon | Pulled</title>
+	<link rel="stylesheet" media="(orientation:landscape)" type="text/css" href="pstyle.css">
+	<link rel="stylesheet" media="(orientation:portrait)" href="pportrait.css" />
+	<link rel="icon" 
+      type="image/png" 
+      href="images/ameliaoonfavicon.png">
 
-	<head>
-		<title>Amelia Oon | Portfolio</title>
-		<meta name="description" content="Welcome to my website! My name is Amelia and I do art and design.">
-		<link rel="stylesheet" type="text/css" href="style.css">
+	<!--Jquery, Plugins, etc.-->
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="myJquery.js"></script>
+	<script type="text/javascript" src="aboutsearch.js"></script>
+	<link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="tooltipster-sideTip-light.min.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+	<script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+	<!--privacy badger blocks the new fontawesome but not the old version so i guess this is goin in just in case-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<script type="text/javascript" src="aboutsearch.js"></script>
-	</head>
+	<script src="https://use.fontawesome.com/1056bace38.js"></script>
+</head>
+<body>
 
-	<body>
-		<div id="navbar">
-			<a href="index.html" class="nav">
-				work
-			</a>
-			|
-			<a href="info.html" class="nav now">
-				about
-			</a>
-		</div>
-		
-		<div id="main">
-			<h2>Pulled: A Comics Tracker</h2>
-				<p class="largerfont">
-					<a href="comicsprototype/index.html"><img src="images/full/pulled.png" width="100%"></a>
-					<br>
-					For my Interaction Design class, we were tasked to design a web app that functions as a tracker.
-					I chose to create a comic book tracker, to help people keep track of the different comic books that
-					they have read. We spent a few months going through various iteration and user testing phases, resulting
-					in a prototype. Please note that the protoype only exists to give a general idea of the intended design. <b>It does not fully work and has a few missing pages.</b> You can <a href="pulledprocess.pdf">click here</a> to see my process document, or 
-					<a href="comicsprototype/index.html">click here</a> to view the prototype.
+	<div id="home">
+		<a href="index.html" title="home" class="home">
+			<i class="fa fa-home" aria-hidden="true"></i>
+		</a>
 
-				</p>
-				
+		<a href="design.html" title="back" class="home">
+			<i class="fa fa-mail-reply" aria-hidden="true"></i>
+		</a>
+	</div>
 
 
+	<div id="animationbox" class="revealable">	
 
 
+		<h1>Pulled: A Comics Tracker</h1>
 
-		</div>
+		<p>
+				<a href="comicsprototype/index.html"><img src="portfolio/pulled.png" width="100%"></a>
+		</p>
+		<p>
+			For my Interaction Design class, we were tasked to design a web app that functions as a tracker. I chose to create a comic book tracker, to help people keep track of the different comic books that they have read. We spent a few months going through various iteration and user testing phases, resulting in a prototype.
+		</p>
+		<p>
+			<b>Please note:</b> the protoype only exists to give a general idea of the intended design. Although I coded it from scratch, I am not a developer, so <i>it does not fully work and has some missing pages.</i>
+		</p>
+		<p>
+			You can view my process document and style guide <a href="portfolio/pulledprocess.pdf">here</a>,
+			or open the prototype <a href="comicsprototype/index.html">here</a>.
 
+		</p>
+	</div>
 
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
-
-	</body>
-
+</body>
 </html>

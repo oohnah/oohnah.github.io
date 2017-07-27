@@ -1,48 +1,59 @@
-<!DOCTYPE HTML>
+
+<!DOCTYPE html>
 <html>
+<head>
+	<title>Amelia Oon | NUWIT</title>
+	<link rel="stylesheet" media="(orientation:landscape)" type="text/css" href="pstyle.css">
+	<link rel="stylesheet" media="(orientation:portrait)" href="pportrait.css" />
+	<link rel="icon" 
+      type="image/png" 
+      href="images/ameliaoonfavicon.png">
 
-	<head>
-		<title>Amelia Oon | Portfolio</title>
-		<meta name="description" content="Welcome to my website! My name is Amelia and I do art and design.">		
-		<link rel="stylesheet" type="text/css" href="style.css">
+	<!--Jquery, Plugins, etc.-->
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="myJquery.js"></script>
+	<script type="text/javascript" src="aboutsearch.js"></script>
+	<link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="tooltipster-sideTip-light.min.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+	<script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+	<!--privacy badger blocks the new fontawesome but not the old version so i guess this is goin in just in case-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<script type="text/javascript" src="aboutsearch.js"></script>
-	</head>
+	<script src="https://use.fontawesome.com/1056bace38.js"></script>
+</head>
+<body>
 
-	<body>
-		<div id="navbar">
-			<a href="index.html" class="nav">
-				work
-			</a>
-			|
-			<a href="info.html" class="nav now">
-				about
-			</a>
-		</div>
-		
-		<div id="main">
-			<h2>NUWiT Designs</h2>
-				<p class="largerfont">
-					<img src="images/full/nuwit.png" width="100%">
-					<br>
-					<img src="images/full/nuwitmoth.png" width="100%">
-					<br>
-					I spent a semester as the designer for NUWiT, or the Northeastern University Women in Tech club.
-					As their designer, I created a new logo for them (top), as well as a laptop sticker (bottom).
+	<div id="home">
+		<a href="index.html" title="home" class="home">
+			<i class="fa fa-home" aria-hidden="true"></i>
+		</a>
 
-				</p>
-				
-
+		<a href="design.html" title="back" class="home">
+			<i class="fa fa-mail-reply" aria-hidden="true"></i>
+		</a>
+	</div>
 
 
+	<div id="animationbox" class="revealable">	
 
 
-		</div>
+		<h1>NUWIT Designs</h1>
 
+		<p>
+				<img src="portfolio/nuwit.png" width="100%">
+		</p>
+	<p>
+				<img src="portfolio/nuwitmoth.png" width="100%">
+		</p>
+		<p>
+			When I was the design officer for Northeastern University Women in Tech (NUWIT), I rebranded
+			the organization with a new logo (top). I also created laptop stickers for the members (bottom).
 
+		</p>
+	</div>
 
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
-	</body>
-
+</body>
 </html>

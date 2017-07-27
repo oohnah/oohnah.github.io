@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 2433 1200" style="enable-background:new 0 0 2433 1200;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#7B7BBA;}
+	.st2{fill:#FFCCCC;}
+	.st3{fill:url(#Polka_Dot);}
+	.st4{fill:url(#New_Pattern_Swatch_4);}
+</style>
+<pattern  x="-23" y="-75" width="300" height="300" patternUnits="userSpaceOnUse" id="New_Pattern_Swatch_4" viewBox="5 -305 300 300" style="overflow:visible;">
+	<g>
+		<rect x="5" y="-305" class="st0" width="300" height="300"/>
+		<circle class="st1" cx="230" cy="-5" r="5"/>
+		<circle class="st1" cx="80" cy="-5" r="5"/>
+		<circle class="st1" cx="305" cy="-155" r="5"/>
+		<circle class="st1" cx="155" cy="-155" r="5"/>
+		<circle class="st1" cx="5" cy="-155" r="5"/>
+		<circle class="st1" cx="230" cy="-305" r="5"/>
+		<circle class="st1" cx="80" cy="-305" r="5"/>
+	</g>
+</pattern>
+<pattern  x="-23" y="-75" width="400" height="378.9" patternUnits="userSpaceOnUse" id="Polka_Dot" viewBox="12 -390.9 400 378.9" style="overflow:visible;">
+	<g>
+		<rect x="12" y="-390.9" class="st0" width="400" height="378.9"/>
+		<circle class="st2" cx="312" cy="-12" r="12"/>
+		<circle class="st2" cx="112" cy="-12" r="12"/>
+		<circle class="st2" cx="412" cy="-201.5" r="12"/>
+		<circle class="st2" cx="212" cy="-201.5" r="12"/>
+		<circle class="st2" cx="12" cy="-201.5" r="12"/>
+		<circle class="st2" cx="312" cy="-390.9" r="12"/>
+		<circle class="st2" cx="112" cy="-390.9" r="12"/>
+	</g>
+</pattern>
+<g>
+	<rect x="937.3" y="240.7" class="st3" width="24" height="24"/>
+	<g>
+		<circle class="st3" cx="949.3" cy="252.7" r="12"/>
+	</g>
+</g>
+<rect y="-30" class="st4" width="2433" height="1245"/>
+</svg>

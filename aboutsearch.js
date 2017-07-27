@@ -10,13 +10,16 @@ function favorite () {
 			aa="The Bartimaeus Trilogy";
 			break;
 		case "color":
-			aa="Purple, of course";
+			aa="Purple!";
 			break;
 		case "food":
 			aa="Ice cream, falafel, and fries";
 			break;
+		case "cookie":
+			aa="Chocolate chip!";
+			break;			
 		case "song":
-			aa="Right now, it's Gravel to Tempo by Hayley Kiyoko";
+			aa="Right now, it's When by Dodie Clark";
 			break;
 		case "artist":
 			aa="Salvador Dali"
@@ -31,13 +34,13 @@ function favorite () {
 			aa="Tumblr";
 			break;
 		case "font":
-			aa="Righ now, I like and can afford Mission Gothic and Cylburn.";
+			aa="Right now, I love Moon by Jack Harvatt";
 			break;
 		case "place":
 			aa="Bangkok, Thailand, or maybe Boston!"
 			break;
 		case "movie":
-			aa="Current favorite is Big Hero 6";
+			aa="Current favorite is Big Hero 6!";
 			break;
 		case "disney movie":
 			aa="Mulan, The Lion King, Big Hero 6";
@@ -49,7 +52,7 @@ function favorite () {
 			aa="Edy's French Silk"
 			break;
 		case "activity":
-			aa="Singing, designing/drawing, dancing, or watching a movie"
+			aa="Doing art, or playing the ukulele"
 			break;
 		case "chain restaurant":
 			aa="The Cheesecake Factory";
@@ -67,7 +70,7 @@ function favorite () {
 			aa="H&M";
 			break;
 		case "comic":
-			aa="1996 run of Nightwing, and Impulse";
+			aa="1996 run of Nightwing, Impulse, and 90s Young Justice";
 			break;
 		case "webcomic":
 			aa="Always Human, Gloomverse";
