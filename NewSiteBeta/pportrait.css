@@ -46,15 +46,15 @@ p{
 .home{
 	display: block;
 	z-index: 22;
-	margin: 20px;
-	font-size: 60px;
+	margin: 24px;
+	font-size: 72px;
 	background-color: #FFCCCC;
 	color: white;
-	width: 70px;
-	height: 70px;
+	width: 84px;
+	height: 84px;
 	border-radius: 50%;
 	text-align: center;
-	padding: 5px;
+	padding: 10px;
 	transition: .75s;
 }
 
@@ -64,9 +64,9 @@ p{
     background: -moz-linear-gradient(#9999CC, #FFCCCC); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#9999CC, #FFCCCC); /* Standard syntax */
     color: #FFFFFF;
-    font-size: 64px;
-	width: 74px;
-	height: 74px;
+    font-size: 76px;
+	width: 88px;
+	height: 88px;
 }
 
 
