@@ -21,7 +21,7 @@ a{
 h1{
 	font-family: 'moon';
 	font-weight: normal;
-	font-size: 36px;
+	font-size: 48px;
 
 }
 
@@ -54,7 +54,7 @@ h1{
 #logo{
 	margin-top: 100px;
 	margin-bottom: 200px;
-	width: 400px;
+	width: 500px;
 }
 
 /*------------explore my work section-----------------------------------------------------*/
@@ -80,11 +80,11 @@ h1{
 	font-family: 'moon';
 	margin-top: 50px;
 	margin-bottom: 0;
-	font-size: 36px;
+	font-size: 48px;
 }
 
 .workicons{
-	width: 250px;
+	width: 400px;
 	display: inline-block;
 	margin: 5%;
 	transition: .75s;
@@ -92,7 +92,7 @@ h1{
 }
 
 .workicons:hover{
-	width: 275px;
+	width: 425px;
 }
 
 /*----------------about me section--------------------------------------------*/
@@ -136,10 +136,11 @@ h1{
 #textbox{
 	border: 1px solid #7B7BBA;
 	border-radius: 3px;
-	font-size: 20px;
+	font-size: 36px;
 	font-family: 'Montserrat';
 	font-weight: 300;
 	padding: 5px;
+	margin: 20px;
 }
 
 /*------------------------resume section-----------------------------------*/
