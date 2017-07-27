@@ -23,7 +23,7 @@ a:hover{
 p{
 	margin-left: 10%;
 	margin-right: 10%;
-	font-size: 36px;
+	font-size: 48px;
 }
 
 /*---------------------------------------------fonts--------------------------------------------------*/
@@ -95,7 +95,7 @@ p{
 
 
 #animationbox{
-	width: 85%;
+	width: 88%;
 	position: absolute;
 	right: 0;
 	top: 0;
