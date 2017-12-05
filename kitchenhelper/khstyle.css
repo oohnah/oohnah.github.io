@@ -37,6 +37,18 @@ h3{
 	color: #ff2c27;
 
 }
+#logo{
+	position: fixed;
+	top: 0px;
+	left: 10px;
+	width: 100px;
+	transition: .75s;
+}
+
+#logo:hover{
+	width: 110px;
+}
+
 #screen{
 	width: 50%;
 	position: absolute;
@@ -81,6 +93,7 @@ h3{
 	height: 650px;
 }
 
+
 #searchbar{
 	font-size: 36px;
 	width: 88%;
@@ -115,6 +128,111 @@ h3{
  a{
 	text-decoration: none;
 	color: white;
+}
+#checks{
+	line-height: 28px;
+}
+
+#servingsize{
+	font-size: 18px;
+	width: 36px;
+	font-family: 'Montserrat';
+}
+
+#unwanted, #add{
+	font-size: 18px;
+	font-family: 'Montserrat';
+}
+
+.added{
+	background-color: #ff2c27;
+	color: #fff;
+	padding: 5px;
+	margin: 5px;
+	width: auto;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ff2c27;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ff2c27;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.link{
+	width: 200px;
+	background-color: #ff2c27;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: inline-block;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin: 10px;
+	border-radius: 10px;
+	opacity: .8;
+	transition: .75s;
+
+}
+.link:hover{
+	opacity: 1;
 }
 
 

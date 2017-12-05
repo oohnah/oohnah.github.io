@@ -6,8 +6,12 @@
 	<link rel="stylesheet" type="text/css" href="khstyle.css">
 	<link rel="icon" type="image/png" href="svgs/logosq.png">
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="unwanted.js"></script>
 </head>
 <body>
+	<a href="index.html"><img src="svgs/logo.png" id="logo"></a>
+
 	<div id ="screen">
 		<div id="nav">
 			<a href="appstart.html"><img src="svgs/home.svg" class="nav"></a>
@@ -23,21 +27,55 @@
 			<br>
 			<h1>Settings</h1>
 			<h3>Dietary Preferences</h3>
-			<p>
-				checkboxes
+			<p id="checks">
+				<input type="checkbox" name="vegetarian">
+				<label for="vegetarian">vegetarian &nbsp;</label>
+				<input type="checkbox" name="vegan">
+				<label for="vegan">vegan &nbsp;</label>
+				<input type="checkbox" name="gluten free">
+				<label for="gluten free">gluten free &nbsp;</label>
+				<input type="checkbox" name="kosher">
+				<label for="kosher">kosher &nbsp;</label>
+				<input type="checkbox" name="pescatarian">
+				<label for="pescatarian">pescatarian &nbsp;</label>
+				<input type="checkbox" name="low cal">
+				<label for="low cal">low cal &nbsp;</label>
+				<input type="checkbox" name="low fat">
+				<label for="low fat">low fat &nbsp;</label>
+				<input type="checkbox" name="low sugar">
+				<label for="low sugar">low sugar &nbsp;</label>				
+				<input type="checkbox" name="paleo">
+				<label for="paleo">paleo &nbsp;</label>
+				<input type="checkbox" name="raw">
+				<label for="raw">raw &nbsp;</label>
 			</p>
+			<br>
 			<h3>Unwanted Ingredients</h3>
 			<p>
-			search box				
+				<input type="text" name="unwanted" id="unwanted" onKeydown="Javascript: if (event.keyCode==13) add3();">	
+				<button type="button" name="add" id="add" onclick="add3()">add</button>
+				<br>
+				<p id="added"></p>			
 			</p>
+			<br>
 			<h3>Cooking Tips</h3>
 			<p>
-				on/off
+				off/on: &nbsp;
+				<label class="switch">
+				  <input type="checkbox">
+				  <span class="slider round"></span>
+				</label>
+				
 			</p>
+			<br>
 			<h3>Default Serving Size</h3>
 			<p>
-				<input type="text" name="servingsize">
-			</p>			
+				<input type="number" name="servingsize" id="servingsize">
+			</p>
+			<br>	
+			<p>
+				<span class="link" onclick="save()">save settings</span>
+			</p>		
 
 		</div>
 	</div>
