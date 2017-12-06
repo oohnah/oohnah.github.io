@@ -1,3 +1,11 @@
+$(document).ready(function() {
+    $('#scanpopup').delay(12000).animate({opacity: 0}, 800);
+    $('#fscreen').delay(12000).animate({opacity:.85},800);
+});
+
+
+
+
 function add (){
 	var input=document.getElementById('unwanted').value;
 	var output="";
@@ -27,3 +35,29 @@ function remove(i){
 function save(){
 	alert("Your settings have been saved.");
 }
+
+
+function ftoggle(){
+	$("#fitems").toggle();
+	$("#fitems").removeClass("hidden");
+}
+
+function stoggle(){
+	$("#sitems").toggle();
+	$("#sitems").removeClass("hidden");
+}
+
+function hides(){
+	$("#sitems").hide();
+}
+
+function fav(i){
+	$(i).toggle();
+}
+
+function done(){
+	alert("Dish complete! Enjoy your meal!");
+}
+
+
+
