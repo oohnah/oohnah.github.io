@@ -4,7 +4,7 @@ $(document).ready(function() {
 });
 
 
-
+/*
 
 function add (){
 	var input=document.getElementById('unwanted').value;
@@ -21,6 +21,7 @@ function add2(){
 	div.setAttribute('onclick', 'remove()');
 	document.getElementById('added').appendChild(div);
 }
+*/
 
 function add3(){
 	var input = $("#unwanted").val();
@@ -57,6 +58,16 @@ function fav(i){
 
 function done(){
 	alert("Dish complete! Enjoy your meal!");
+}
+
+function showchange(){
+	$('#changeserving').show();
+}
+
+function changeservingsize(){
+	var input = $('#servinginput').val();
+	$('#servesize').html(input);
+	$('#changeserving').hide();
 }
 
 

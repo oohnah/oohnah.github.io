@@ -322,5 +322,28 @@ input:checked + .slider:before {
 	text-align: center;
 }
 
+#preptime{
+	font-size: 48px;
+	font-family: 'Montserrat';
+	border: 2px solid #ff2c27;
+}
+#changeserving{
+	position: fixed;
+	top: 40%;
+	left: 35%;
+	border-radius: 10px;
+	opacity: .95;	
+	background-color: #a6ffff;
+	background: -webkit-linear-gradient(#ffe1d6, #a6ffff);
+	padding: 20px;
+	text-align: center;
+	z-index: 4;
+	font-size: 24px;
+	display: none;
+}
+
+#servinginput, #servingbutton{
+	font-size: 24px;
+}
 
 

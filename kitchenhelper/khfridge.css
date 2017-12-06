@@ -122,7 +122,7 @@ h3{
 #scanner{
 	width: 280px;
 	background-color: #a6ffff;
-	opacity: .8;
+	opacity: .7;
 	animation-name: scan;
 	animation-duration: 5s;
 	animation-iteration-count: 3;
@@ -364,6 +364,5 @@ input:checked + .slider:before {
 	width: 100%;
 	text-align: center;
 }
-
 
 

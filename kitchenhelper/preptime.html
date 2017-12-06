@@ -9,7 +9,6 @@
 </head>
 <body>
 	<a href="index.html"><img src="svgs/logo.png" id="logo"></a>
-
 	<div id ="screen">
 		<div id="nav">
 			<a href="appstart.html"><img src="svgs/home.svg" class="nav"></a>
@@ -23,13 +22,21 @@
 		</div>
 		<div id="content">
 			<br>
-			<h1>Browse by Diet</h1>
-			<a href="diet/vegetarian.html"><div class="category">Vegetarian</div></a>
-			<a href="diet/vegan.html"><div class="category">Vegan</div></a>
-			<a href="diet/kosher.html"><div class="category">Kosher</div></a>
-			<a href="diet/gf.html"><div class="category">Gluten Free</div></a>
-			<a href="diet/lowcal.html"><div class="category">Low Cal</div></a>
-			<a href="diet/paleo.html"><div class="category">Paleo</div></a>
+			<h1>Browse By Prep Time:</h1>
+			<p style="text-align: center;">
+				<select id="preptime" onChange="window.location.href=this.value">
+				  <option value="preptime.html">Choose Time</option>
+				  <option value="time/tenmin.html">10 min</option>
+				  <option value="time/fifteenmin.html">15 min</option>
+				  <option value="time/thirtymin.html">30 min</option>
+				  <option value="time/fourtyfivemin.html">45 min</option>
+				  <option value="time/onehr.html">1 hour</option>
+				  <option value="time/twohr.html">2 hours</option>
+				  <option value="time/threehr.html">3 hours</option>
+				  <option value="time/night.html">overnight</option>				  
+				</select>				
+			</p>
+  
 
 		</div>
 	</div>

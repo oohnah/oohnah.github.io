@@ -12,6 +12,14 @@
 </head>
 <body>
 	<a href="index.html"><img src="svgs/logo.png" id="logo"></a>
+
+	<div id="changeserving">
+		<h3>Change Serving Size</h3>
+		<input type="number" name="servingsize" id="servinginput"> servings
+		<button onclick="changeservingsize()" id="servingbutton">ok</button>
+	</div>
+
+	<!--main screen-->
 	<div id ="screen">
 		<div id="nav">
 			<a href="appstart.html"><img src="svgs/home.svg" class="nav"></a>
@@ -23,6 +31,11 @@
 			<input type="text" name="searchbar" id="searchbar" class="searchbar">
 			<a href="searchresults.html"><img src="svgs/search.svg" class="searchbar" id="Q"></a>			
 		</div>
+
+
+
+
+		<!--main content-->
 		<div id="content">
 			<br>
 			<h2>
@@ -30,9 +43,14 @@
 					<img src="svgs/starline.svg" width="36" onclick="fav('.fav')" class="fav">
 					<img src="svgs/starfull.svg" width="36" style="display: none;" onclick="fav('.fav');" class="fav">
 			</h2>
-			<p style="margin: 5px;">
-				Serving Size: 2 [change]
+			<p style="margin: 5px; font-size: 20px;">
+				Serving Size:
+				&nbsp;
+				<span id="servesize">2</span>
+				&nbsp;
+				<span class="fsbutton" onclick="showchange()">change</span>
 			</p>
+
 			<div id="recipe">
 				<h3 style="margin-bottom: 5px;">Ingredients</h3>
 
