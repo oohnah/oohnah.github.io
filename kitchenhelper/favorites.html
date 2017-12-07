@@ -32,7 +32,16 @@
 
 			<!--...............filtersort.................-->
 			<div id="filtersort">
-				[edit]
+				<span class="fsbutton" onclick="editfav()" id="editfavbutton">
+					edit
+				</span>
+				<span class="fsbutton" onclick="deletefav()" id="deletefavbutton">
+					delete
+				</span>
+				<span class="fsbutton" onclick="savefav()" id="savefavbutton">
+					save
+				</span>
+
 				<span class="fsbutton" onclick="ftoggle()">Filter</span>
 					<div id="fitems" class="hidden">
 						<input type="checkbox" name="vegetarian">
@@ -65,12 +74,11 @@
 					</div>				
 			</div><!--.............end filtersort................-->			
 
-
-
+			<!--...................FAVE RECIPES....................-->
+			<div id="faves">
 				<div class="recipecard">
-					<a href="samplerecipe.html"><span class="rhead">Recipe</span></a>
-					<img src="svgs/starlinew.svg" width="20" onclick="fav('.fav')" class="fav">
-					<img src="svgs/starfullw.svg" width="20" style="display: none;" onclick="fav('.fav');" class="fav">
+					<a href="samplerecipe.html"><span class="rhead">Recipe 1</span></a>
+					<input type="checkbox" name="check" class="trashcheck">
 					<p class="smaller">
 						24 minutes
 					</p>
@@ -82,9 +90,9 @@
 
 
 				<div class="recipecard">
-					<a href="samplerecipe.html"><span class="rhead">Recipe</span></a>
-					<img src="svgs/starlinew.svg" width="20" onclick="fav('.fav2')" class="fav2">
-					<img src="svgs/starfullw.svg" width="20" style="display: none;" onclick="fav('.fav2');" class="fav2">
+					<a href="samplerecipe.html"><span class="rhead">Recipe 2</span></a>
+					<input type="checkbox" name="check" class="trashcheck">
+
 					<p class="smaller">
 						24 minutes
 					</p>
@@ -95,36 +103,9 @@
 
 
 				<div class="recipecard">
-					<a href="samplerecipe.html"><span class="rhead">Recipe</span></a>
-					<img src="svgs/starlinew.svg" width="20" onclick="fav('.fav3')" class="fav3">
-					<img src="svgs/starfullw.svg" width="20" style="display: none;" onclick="fav('.fav3');" class="fav3">
-					<p class="smaller">
-						24 minutes
-					</p>
-					<p class="smaller">
-						4/5 stars
-					</p>
-				</div>	
+					<a href="samplerecipe.html"><span class="rhead">Recipe 3</span></a>
+					<input type="checkbox" name="check" class="trashcheck">
 
-
-
-				<div class="recipecard">
-					<a href="samplerecipe.html"><span class="rhead">Recipe</span></a>
-					<img src="svgs/starlinew.svg" width="20" onclick="fav('.fav4')" class="fav4">
-					<img src="svgs/starfullw.svg" width="20" style="display: none;" onclick="fav('.fav4');" class="fav4">
-					<p class="smaller">
-						24 minutes
-					</p>
-					<p class="smaller">
-						4/5 stars
-					</p>
-				</div>	
-
-
-				<div class="recipecard">
-					<a href="samplerecipe.html"><span class="rhead">Recipe</span></a>
-					<img src="svgs/starlinew.svg" width="20" onclick="fav('.fav5')" class="fav5">
-					<img src="svgs/starfullw.svg" width="20" style="display: none;" onclick="fav('.fav5');" class="fav5">
 					<p class="smaller">
 						24 minutes
 					</p>
@@ -136,9 +117,9 @@
 
 
 				<div class="recipecard">
-					<a href="samplerecipe.html"><span class="rhead">Recipe</span></a>
-					<img src="svgs/starlinew.svg" width="20" onclick="fav('.fav6')" class="fav6">
-					<img src="svgs/starfullw.svg" width="20" style="display: none;" onclick="fav('.fav6');" class="fav6">
+					<a href="samplerecipe.html"><span class="rhead">Recipe 4</span></a>
+					<input type="checkbox" name="check" class="trashcheck">
+
 					<p class="smaller">
 						24 minutes
 					</p>
@@ -149,9 +130,23 @@
 
 
 				<div class="recipecard">
-					<a href="samplerecipe.html"><span class="rhead">Recipe</span></a>
-					<img src="svgs/starlinew.svg" width="20" onclick="fav('.fav7')" class="fav7">
-					<img src="svgs/starfullw.svg" width="20" style="display: none;" onclick="fav('.fav7');" class="fav7">
+					<a href="samplerecipe.html"><span class="rhead">Recipe 5</span></a>
+					<input type="checkbox" name="check" class="trashcheck">
+
+					<p class="smaller">
+						24 minutes
+					</p>
+					<p class="smaller">
+						4/5 stars
+					</p>
+				</div>	
+
+
+
+				<div class="recipecard">
+					<a href="samplerecipe.html"><span class="rhead">Recipe 6</span></a>
+					<input type="checkbox" name="check" class="trashcheck">
+
 					<p class="smaller">
 						24 minutes
 					</p>
@@ -162,9 +157,9 @@
 
 
 				<div class="recipecard">
-					<a href="samplerecipe.html"><span class="rhead">Recipe</span></a>
-					<img src="svgs/starlinew.svg" width="20" onclick="fav('.fav8')" class="fav8">
-					<img src="svgs/starfullw.svg" width="20" style="display: none;" onclick="fav('.fav8');" class="fav8">
+					<a href="samplerecipe.html"><span class="rhead">Recipe 7</span></a>
+					<input type="checkbox" name="check" class="trashcheck">
+
 					<p class="smaller">
 						24 minutes
 					</p>
@@ -175,9 +170,9 @@
 
 
 				<div class="recipecard">
-					<a href="samplerecipe.html"><span class="rhead">Recipe</span></a>
-					<img src="svgs/starlinew.svg" width="20" onclick="fav('.fav9')" class="fav9">
-					<img src="svgs/starfullw.svg" width="20" style="display: none;" onclick="fav('.fav9');" class="fav9">
+					<a href="samplerecipe.html"><span class="rhead">Recipe 8</span></a>
+					<input type="checkbox" name="check" class="trashcheck">
+
 					<p class="smaller">
 						24 minutes
 					</p>
@@ -186,8 +181,23 @@
 					</p>
 				</div>	
 
-		</div>
-	</div>
+
+				<div class="recipecard">
+					<a href="samplerecipe.html"><span class="rhead">Recipe 9</span></a>
+					<input type="checkbox" name="check" class="trashcheck">
+
+					<p class="smaller">
+						24 minutes
+					</p>
+					<p class="smaller">
+						4/5 stars
+					</p>
+				</div>	
+			</div><!--end faves-->
+
+
+		</div><!--end content-->
+	</div><!--end screen-->
 
 </body>
 </html>

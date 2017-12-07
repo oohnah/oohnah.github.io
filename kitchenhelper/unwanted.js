@@ -70,5 +70,64 @@ function changeservingsize(){
 	$('#changeserving').hide();
 }
 
+$(document).ready(function() {
+    $('#deletefavbutton').hide();
+    $('#savefavbutton').hide();
+    $('#rightbutton2').hide();
+    $('#contrec').hide();
+});
 
+function editfav(){
+	$('.trashcheck').show();
+	$('#editfavbutton').hide();
+	$('#deletefavbutton').show();
+	$('#savefavbutton').show();
+}
+
+function deletefav(){
+	$('#faves').find('input:checked').parent().hide();
+}
+
+function savefav(){
+	$('.trashcheck').hide();
+	$('#deletefavbutton').hide();
+	$('#savefavbutton').hide();
+	$('#editfavbutton').show();
+}
+
+function confirm(){
+	$("#subhead").html("review and confirm order:");
+	$('#rightbutton').hide();
+	$('#rightbutton2').show();
+
+	var flour = $('#flour').val();
+	var salt = $('#salt').val();
+	var butter = $('#butter').val();
+	var eggs = $('#eggs').val();
+	var milk = $('#milk').val();
+
+	var flour2 = $('#flour2').find(":selected").text();
+	var salt2 = $('#salt2').find(":selected").text();
+	var butter2 = $('#butter2').find(":selected").text();
+	var eggs2 = $('#eggs2').find(":selected").text();
+	var milk2 = $('#milk2').find(":selected").text();
+
+	$('#quantitybox').html("<ul><li>"+flour+" "+flour2+" flour</li><li>"+ salt+" "+salt2+" salt</li><li>" + butter +" "+butter2+" butter</li><li>" + eggs+" "+eggs2+" eggs</li><li>" + milk+" "+milk2+" milk</li></ul>" );
+	$("#quantitybox").css('line-height', '22px');
+}
+
+function timesetting(){
+	var datetime = $("#datetimes").val();
+	$("#setordertime").hide();
+	$("#ordertimeh2").html("Order Complete!");
+	$("#back").hide();
+	$("#cont").hide();
+	$("#contrec").show();
+	if ( $('input[name="asap"]').is(':checked')) {
+		$('#timebox').html("Your order will arrive ASAP!");
+	}else{
+		$("#timebox").html("Your order will arrive at "+datetime+"!");
+	}
+
+}
 
