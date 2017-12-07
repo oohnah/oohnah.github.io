@@ -267,11 +267,12 @@ input:checked + .slider:before {
 	background-color: #ff2c27;
 	display: inline-block;
 	margin: 5px;
+	cursor: pointer;
 
 }
 #fitems{
 	background-color: #fff;
-	width: 200px;
+	width: 230px;
 	position: absolute;
 	top: 45px;
 	padding: 10px;
@@ -369,4 +370,18 @@ input[type=number]{
 	width: 50px;
 }
 
-
+#popup{
+	width: 400px;
+	position: absolute;
+	left: 32%;
+	top: 30%;
+	background-color: #a6ffff;
+	background: -webkit-linear-gradient(#ffe1d6, #a6ffff);
+	height: auto;
+	border-radius: 10px;
+	opacity: .9;
+	transition: .7s;
+	z-index: 3;
+	padding: 20px;
+	text-align: center;
+}

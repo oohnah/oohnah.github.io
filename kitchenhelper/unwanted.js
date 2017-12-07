@@ -131,3 +131,7 @@ function timesetting(){
 
 }
 
+function answer(){
+	$("#popup").hide();
+}
+
