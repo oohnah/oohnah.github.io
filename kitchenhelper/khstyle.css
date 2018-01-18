@@ -15,7 +15,8 @@ body{
 	color: #222222;
 }
 h1{
-	font-family: 'Voltage';
+
+	font-family: voltage, sans-serif;
 	font-size: 48px;
 	margin-bottom: 20px;
 	margin-top: 10px;
