@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300');
 @import url("https://use.typekit.net/ass6oec.css");
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
 
 
 html{
@@ -16,7 +18,7 @@ body{
 	color: #222222;
 }
 h1{
-	font-family: voltage, sans-serif;
+	font-family: voltage, Lobster, sans-serif;
 	font-size: 48px;
 	margin-bottom: 20px;
 	margin-top: 10px;
