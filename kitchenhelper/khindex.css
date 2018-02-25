@@ -5,8 +5,8 @@
 
 body{
 	min-height: 100%;
-	background-color: #a6ffff;
-	background: -webkit-linear-gradient(#ffe1d6, #a6ffff) no-repeat;
+	background-color: #cafbff;
+	background: -webkit-linear-gradient(#ffe1d6, #cafbff) no-repeat;
 	background-attachment: fixed;
 	font-family: 'Montserrat';
 }
