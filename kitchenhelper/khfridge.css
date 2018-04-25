@@ -5,7 +5,7 @@
 
 
 html{
-	background: url('svgs/fridge.png') no-repeat center center;
+	background: url('svgs/newfridge.png') no-repeat center center;
 	min-height: 100%;
 	background-size: cover;
 	background-attachment: fixed;
@@ -122,7 +122,7 @@ h3{
 }
 
 #scanner{
-	width: 280px;
+	width: 500px;
 	background-color: #a6ffff;
 	opacity: .7;
 	animation-name: scan;
@@ -130,7 +130,7 @@ h3{
 	animation-iteration-count: 3;
 	z-index: 1;
 	position: fixed;
-	left: 110px;
+	left: 400px;
 	top: 20px;
 
 }
