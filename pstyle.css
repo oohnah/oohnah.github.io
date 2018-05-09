@@ -24,6 +24,12 @@ p{
 	margin-left: 20%;
 	margin-right: 20%;
 }
+h2{
+	font-family: 'moon';
+	font-weight: normal;
+	font-size: 28px;
+color: #9999CC;
+}
 
 /*---------------------------------------------fonts--------------------------------------------------*/
 
@@ -132,8 +138,8 @@ p{
 }
 
 .illustrate:hover{
-	width: 25%;
-	height: 25%;
+	width: 21%;
+	height: 21%;
 	margin-top: 4%;
 
 }

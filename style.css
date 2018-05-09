@@ -19,9 +19,15 @@ a{
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i');
 
 h1{
-	font-family: 'moon';
+	font-family: 'moon', sans-serif;
 	font-weight: normal;
 	font-size: 36px;
+
+}
+h2{
+	font-family: 'moon';
+	font-weight: normal;
+	font-size: 28px;
 
 }
 
@@ -84,7 +90,7 @@ h1{
 }
 
 .workicons{
-	width: 250px;
+	width: 265px;
 	display: inline-block;
 	margin: 5%;
 	transition: .75s;
