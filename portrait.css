@@ -25,6 +25,13 @@ h1{
 
 }
 
+h2{
+	font-family: 'moon';
+	font-weight: normal;
+	font-size: 48px;
+
+}
+
 /*--------------------------content framing box------------------------*/
 .contents{
 	margin-top: 50px;
