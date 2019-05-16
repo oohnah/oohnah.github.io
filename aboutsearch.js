@@ -17,30 +17,30 @@ function favorite () {
 			break;
 		case "cookie":
 			aa="Chocolate chip!";
-			break;			
+			break;
 		case "song":
-			aa="Right now, it's When by Dodie Clark";
+			aa="Right now, it's Monster by Dodie Clark";
 			break;
 		case "artist":
-			aa="Salvador Dali"
+			aa="Leigh Ellexson"
 			break;
 		case "tv show":
-			aa="Voltron, Steven Universe, and Miraculous Ladybug"
+			aa="Brooklyn 99"
 			break;
 		case "dessert":
 			aa="Ice cream";
 			break;
 		case "website":
-			aa="Tumblr";
+			aa="Youtube?";
 			break;
 		case "font":
-			aa="Right now, I love Moon by Jack Harvatt";
+			aa="Right now, I'm pretty into Gotham";
 			break;
 		case "place":
 			aa="Bangkok, Thailand, or maybe Boston!"
 			break;
 		case "movie":
-			aa="Current favorite is Big Hero 6!";
+			aa="Current favorite is Into the Spiderverse!";
 			break;
 		case "disney movie":
 			aa="Mulan, The Lion King, Big Hero 6";
@@ -88,8 +88,8 @@ function favorite () {
 			aa="HackBeanpot";
 			break;
 		case "designer":
-			aa="Stefan Sagmeister";
-			break;	
+			aa="Chris Do";
+			break;
 		default:
 			aa="I guess I don't have a favorite one of those."
 
