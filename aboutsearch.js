@@ -90,6 +90,9 @@ function favorite () {
 		case "designer":
 			aa="Chris Do";
 			break;
+		case "podcast":
+			aa="Design Matters with Debbie Millman";
+			break;
 		default:
 			aa="I guess I don't have a favorite one of those."
 

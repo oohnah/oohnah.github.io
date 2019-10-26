@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Amelia Oon | Boston Based Designer & Creative</title>
+    <meta name="description" content="Amelia Oon is a Boston-based graphic designer and multimedia creator with a focus on branding, web design, and motion grphics.">
+<!--CSS stylesheets--->
+    <link rel="stylesheet" media="(orientation: landscape)" href="style.css">
+    <link rel="stylesheet" media="(orientation: portrait)" href="stylemobile.css">
+    <link href="hamburgers.css" rel="stylesheet">
+<!--JS-->
+    <script type="text/javascript" src="jquery_plugins/aboutsearch.js"></script>
+
+  </head>
+
+<!---begin body------->
+  <body>
+    <span id="top"></span>
+
+    <!--00: LAYOUT----------->
+    <div class="layout">
+
+    <!---01: MENU | hamburger menu here ------>
+      <div class="menu">
+        <div class="menutext">menu</div>
+
+        <button class="hamburger nobg hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div><!--end 01 menu-->
+
+    <!---01.5:MENU TEXT-->
+      <div class="nav">
+        <ul>
+          <li><a href="index.html#top">home</a></li>
+          <li><a href="about.html#top">about</a></li>
+          <li><a href="services.html">services</a></li>
+          <li><a href="contact.html">contact</a></li>
+
+        </ul>
+      </div>
+
+    <!--02.00: INTRO IMG | Image for intro, OCTOPUS PARALLAX------------>
+      <div class="introimg">
+        <div id="scene">
+          <div class=layer data-depth="0.1"><img src="photography/ameliaoon_headshot_bw.png" alt="headshot" class="octo"></div>
+          <div class=layer data-depth="0.2"><img src="illustrations/about_img/six_lg.png" alt="coral bubble" class="octo"></div>
+          <div class=layer data-depth="0.3"><img src="illustrations/about_img/five_lg.png" alt="turquoise bubble" class="octo"></div>
+          <div class=layer data-depth="0.4"><img src="illustrations/about_img/four_lg.png" alt="turqoise waves" class="octo"></div>
+          <div class=layer data-depth="0.5"><img src="illustrations/about_img/three_lg.png" alt="blue bubble" class="octo"></div>
+          <div class=layer data-depth="0.8"><img src="illustrations/about_img/two_lg.png" alt="blue wave" class="octo"></div>
+          <div class=layer data-depth="1.2"><img src="illustrations/about_img/one_lg.png" alt="coral bubble" class="octo"></div>
+
+        </div>
+      </div><!--end 02.00 intro img-->
+
+    <!--02.01: INTRO TEXT | quick about with a cta--------------->
+      <div class="abouttext">
+        <h1>Who am I?</h1>
+        <p>
+          My journey in design began as a 13 year old on a website called <a href="http://www.neopets.com/" target="_blank">Neopets</a>. First infatuated with designing my profile, I then became obsessed with HTML and web design. I’ve since expanded my obsession with creativity to a variety of mediums including visual design and animation.
+        </p>
+        <p>
+          By day, I’m committed to creating design and media with the purpose of helping businesses express themselves and grow. I love trying new creative mediums and applying them to a client’s endeavors.
+        </p>
+        <p>
+          By night, I’m a learner and reader, a ukulele enthusiast, a teller of Dad Jokes&#8482;,  and an (unfortunately) bad plant parent. I also volunteer with <a href="https://boston.aiga.org/" target="_blank">AIGA Boston</a>&mdash;catch me helping out at their events!
+        </p>
+        <p>
+          <sup>
+            photo credit: <a href="https://www.conga-design.com/" class="link" target="_blank">Katerina Peña</a>
+          </sup>
+        </p>
+
+
+
+      </div><!--end 02.01 intro text-->
+
+
+
+
+    <!--03.00: WORK | galllery for portfolio----------------------->
+      <div class="aboutsearch">
+        <h1>Still Curious?</h1>
+        <h3>Find out about my favorite</h3>
+
+        <input type="text" name="favorite" id="textbox" onKeydown="Javascript: if (event.keyCode==13) favorite();">
+				<a href="#main" onclick="favorite()" id="go" class="cta">go!</a>
+				<br><br>
+				<span id="answer"></span>
+
+
+      </div><!--end work-->
+
+    <!--04.00 spacer---------------------------->
+    <div class="foot">
+      copyright &copy; Amelia Oon 2019
+    </div>
+
+
+    </div><!--end layout-->
+
+  </body>
+
+
+
+
+
+
+  <!---JS and Jquery Scripts---->
+    <!---PARALLAX JS---->
+    <script src="jquery_plugins/jquery.js"></script>
+    <script src="jquery_plugins/parallax.js"></script>
+    <script>
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+
+    var scene2 = document.getElementById('scene2');
+    var parallax = new Parallax(scene2);
+    </script>
+    <!---end parallax------>
+
+
+    <!---ISOTOPE JS----------->
+    <script src="jquery_plugins/isotope-min.js"></script>
+
+    <script type="text/javascript">
+
+    // init Isotope
+    var $grid = $('.grid').isotope({
+      // options
+      itemSelector: '.grid-item',
+      layoutMode: 'fitRows'
+    });
+    // filter items on button click
+    $('.filter-button-group').on( 'click', 'button', function() {
+      var filterValue = $(this).attr('data-filter');
+      $grid.isotope({ filter: filterValue });
+    });
+    </script>
+    <!---end isotope------->
+
+    <!--hamburger-->
+    <script>
+  // Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  var nav = document.querySelector(".nav");
+  var menutext = document.querySelector(".menutext");
+  // On click
+  hamburger.addEventListener("click", function() {
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    // Do something else, like open/close menu
+    nav.classList.toggle("is-active");
+    menutext.classList.toggle("is-active");
+
+  });
+</script>
+<!--end hamburger-->
+
+</html>

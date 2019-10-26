@@ -1,0 +1,11 @@
+.grid-item{
+  width: 25%;
+  display: inline-block;
+  background-color: #eeeeee;
+  padding: 1em;
+  margin: 1em;
+}
+
+body{
+  color: red;
+}

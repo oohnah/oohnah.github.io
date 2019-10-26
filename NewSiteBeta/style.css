@@ -1,0 +1,328 @@
+/*------------font imports---------------*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500&display=swap');
+@font-face {
+	font-family: 'moonLight';
+	src: url('fonts/MoonTypeface/Moon_Light.otf');
+}
+@font-face {
+	font-family: 'moonBold';
+	src: url('fonts/MoonTypeface/Moon_Bold.otf');
+}
+
+/*-----big global styles------*/
+
+body{
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+	padding: 0;
+	margin: 0;
+	line-height: 1.25em;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+p > a{
+	font-weight: 500;
+	color: #2b2c77;
+	transition: .5s;
+}
+
+p > a:hover{
+	color: #f16163;
+}
+
+.link{
+	font-style: italic;
+	color: #2b2c77;
+	transition: .5s;
+	text-decoration: underline;
+}
+.link:hover{
+	color: #f16163;
+
+}
+.social{
+	font-size: 2.5em;
+	color: #2b2c77;
+	transition: .5s;
+	margin-right: .25em;
+}
+.social:hover{
+	color: #f16163;
+
+}
+/*-------------header styles------------------*/
+h1{
+  margin-bottom: .1em;
+  font-family: 'moonBold';
+  color: #2b2c77;
+	line-height: 1em;
+}
+h2{
+  margin-bottom: .1em;
+  font-family: 'moonBold';
+  color: #2b2c77;
+	line-height: 1em;
+}
+
+h3{
+  margin-top: 0;
+  font-weight: 400;
+	margin-bottom: .25em;
+}
+
+.abouttext li{
+	margin-bottom: .5em;
+}
+
+/*------------layout wrapper & grid setup-------------*/
+.layout {
+  display: grid;
+  grid-template-columns:repeat(12, 1fr);
+  grid-gap: 1em;
+  margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: .5em;
+}
+/*grid box padding*/
+.layout > div{
+  padding: 1em;
+}
+
+
+/*octopus image width*/
+.octo{
+  width: 100%;
+}
+
+/*-----------------------grid boxes-----------------*/
+.menu{
+  grid-column: 11/13;
+	grid-row-start: 1;
+  text-align: right;
+	z-index: 3;
+	align-items: center;
+}
+.menutext{
+	font-family: moonBold;
+	font-size: 1.5em;
+	color: #2b2c77;
+	transition: .5s;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	position: relative;
+
+}
+.menutext.is-active{
+	opacity: 0;
+}
+
+.nav{
+	grid-column: 10/13;
+	grid-row: 1/3;
+	z-index: 2;
+	background-color: #fff;
+	height: 0px;
+	padding: 8em;
+	padding-left: 7em;
+	border-radius: 1em;
+	overflow:hidden;
+	transition: height .75s;
+}
+.nav.is-active{
+	height: 175px;
+
+}
+.nav li{
+	font-size: 1.25em;
+	line-height: 1.75em;
+	font-family: "moonBold";
+	list-style-type: none;
+	color: black;
+	transition: .5s;
+}
+
+.nav li:hover{
+	color: #f16163;
+}
+
+b{
+	font-weight: 400;
+}
+
+/*-----------*/
+
+.introimg{
+  grid-column: 1/7;
+	grid-row-start: 2;
+  text-align: center;
+	z-index: 1;
+}
+
+.introtext{
+  grid-column: 7/11;
+  vertical-align: middle;
+	grid-row-start: 3;
+	z-index: 1;
+}
+
+.abouttext{
+  grid-column: 7/12;
+  vertical-align: middle;
+	grid-row-start: 2;
+	z-index: 1;
+	padding-top: 0;
+
+}
+.abouttext h1, .aboutsearch h1{
+	margin-top: 0;
+}
+
+
+/*portfolio section*/
+.work{
+  grid-column: 2/12;
+  text-align: center;
+	margin-bottom: 2em;
+}
+.aboutsearch{
+	grid-column: 2/11;
+	text-align: left;
+	margin-bottom: 4em;
+
+}
+/*extra design elements*/
+.waves1{
+  grid-column: 11/13;
+  align-self:flex-end;
+	grid-row-start: 2;
+	z-index: 1;
+}
+.deco{
+  width: 100%;
+}
+
+
+
+
+
+/*--*/
+
+
+
+
+.workimg{
+  width: 100%;
+}
+.grid{
+	margin-top: 1.5em;
+}
+.grid-item{
+	width: 33%;
+	overflow: hidden;
+//	background: #eeeeee;
+}
+.grid-item:hover > .grid-overlay-wrap{
+	top:0;
+}
+
+.grid-overlay-wrap{
+	position: absolute;
+	top: -100%;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	transition: .75s;
+	background-color: #2b2c77;
+}
+
+.grid-overlay-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.grid-overlay-text > h2, .grid-overlay-text > p, .grid-overlay-text > hr {
+	color: white;
+	margin-bottom: .25em;
+	margin-top: .25em;
+}
+
+
+.foot{
+	grid-column: 1/13;
+	//background-color: #eeeeee;
+	height: auto;
+	padding: 1em;
+	font-size: .75em;
+	color: #666666;
+}
+
+/*--misc styles--*/
+.cta, button{
+  text-decoration: none;
+  background: #f16163;
+  font-family: "moonBold";
+  width:fit-content;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  border-radius: 1.5em;
+  color: white;
+  transition: .75s;
+	border:none;
+}
+
+.cta:hover, .galleryfilter:hover{
+  background: #39479e;
+}
+
+#portraited{
+	display: none;
+}
+#servicectaportrait{
+	display: none;
+}
+
+#workspacer{
+	height: 1em;
+}
+
+
+button{
+	font-size: 14px;
+	margin: .5em;
+}
+
+button:focus{
+	outline: 0;
+}
+
+#textbox{
+	padding: .5em;
+	border-radius:.5em;
+	border: 1px solid #999;
+	width: 40%;
+	font-family: Montserrat;
+	font-size: 1em;
+	font-weight: 200;
+	margin-right: .5em;
+}
+
+.galleryfilter:focus{
+	outline:0;
+	background-color: #39479e;
+}
+
+.nobg:hover, .nobg:focus{
+	background-color: none;
+}
