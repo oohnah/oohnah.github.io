@@ -283,7 +283,7 @@ b{
   text-decoration: none;
   background: #f16163;
   font-family: "moonBold";
-  width:fit-content;
+  width: auto;
   padding-right: 1.5em;
   padding-left: 1.5em;
   padding-top: .5em;
