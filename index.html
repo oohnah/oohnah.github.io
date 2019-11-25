@@ -198,7 +198,7 @@
       </div>
     </div>
     <img src="portfolio_images/00Thumbnail/portrait.png" class="workimg" alt="one">
-  </div>  
+  </div>
 </a>
 
 <!--kitchen helper-->
@@ -273,6 +273,10 @@
       // options
       itemSelector: '.grid-item',
       layoutMode: 'fitRows'
+    });
+    // layout Isotope after each image loads
+    $grid.imagesLoaded().progress( function() {
+      $grid.isotope('layout');
     });
     // filter items on button click
     $('.filter-button-group').on( 'click', 'button', function() {
