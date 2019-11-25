@@ -163,7 +163,25 @@ b{
   text-align: center;
 	z-index: 1;
 }
-
+.imgthreefour{
+	grid-column: 1/8;
+	grid-row-start: 2;
+	text-align: center;
+	z-index: 1;
+}
+.breadcrumb{
+	grid-column: 2/11;
+	grid-row-start: 1;
+	text-align: left;
+	z-index: 1;
+	margin-top: 1em;
+}
+.imgfullwidth{
+	grid-column: 2/11;
+	grid-row-start: 2;
+	text-align: center;
+	z-index: 1;
+}
 .introtext{
   grid-column: 7/11;
   vertical-align: middle;
@@ -177,8 +195,24 @@ b{
 	grid-row-start: 2;
 	z-index: 1;
 	padding-top: 0;
-
 }
+
+.textright{
+  grid-column: 8/12;
+  vertical-align: middle;
+	grid-row-start: 2;
+	z-index: 1;
+	padding-top: 0;
+}
+.textmiddle{
+	grid-column: 2/11;
+	vertical-align: middle;
+	grid-row-start: 3;
+	z-index: 1;
+	padding-top: 0;
+}
+
+
 .abouttext h1, .aboutsearch h1{
 	margin-top: 0;
 }
@@ -220,11 +254,13 @@ b{
   width: 100%;
 }
 .grid{
-	margin-top: 1.5em;
+	margin-left: 1.5em;
+	margin-top: 1em;
 }
 .grid-item{
-	width: 33%;
+	width: 32%;
 	overflow: hidden;
+	margin: 0em;
 //	background: #eeeeee;
 }
 .grid-item:hover > .grid-overlay-wrap{
@@ -236,7 +272,7 @@ b{
 	top: -100%;
 	z-index: 2;
 	width: 100%;
-	height: 100%;
+	height: 99%;
 	align-items: center;
 	transition: .75s;
 	background-color: #2b2c77;

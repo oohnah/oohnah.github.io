@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kitchen Helper</title>
+	<link rel="stylesheet" type="text/css" href="khstyle.css">
+	<link rel="icon" type="image/png" href="svgs/logosq.png">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="unwanted.js"></script>
+
+</head>
+<body>
+	<a href="index.html"><img src="svgs/logo.png" id="logo"></a>
+
+	<div id="changeserving">
+		<h3>Change Serving Size</h3>
+		<input type="number" name="servingsize" id="servinginput"> servings
+		<button onclick="changeservingsize()" id="servingbutton">ok</button>
+	</div>
+
+	<!--main screen-->
+	<div id ="screen">
+		<div id="nav">
+			<a href="appstart.html"><img src="svgs/home.svg" class="nav"></a>
+			<a href="fridgescan.html"><img src="svgs/fridge.svg" class="nav"></a>
+			<a href="favorites.html"><img src="svgs/starline.svg" class="nav"></a>
+			<a href="settings.html"><img src="svgs/settings.svg" class="nav"></a>
+		</div>
+		<div id="search">
+			<input type="text" name="searchbar" id="searchbar" class="searchbar">
+			<a href="searchresults.html"><img src="svgs/search.svg" class="searchbar" id="Q"></a>			
+		</div>
+
+
+
+
+		<!--main content-->
+		<div id="content">
+			<br>
+			<h2>
+				Order Ingredients
+			</h2>
+			<h3 id="subhead">
+				Customize Quantities
+			</h3>
+
+			<div style="font-size: 18px; line-height: 48px;" id="quantitybox">
+				<input type="number" name="" id="flour">
+				<select id="flour2">
+					<option>cups</option>
+					<option>lbs</option>
+				</select> flour
+				<br>
+				<input type="number" name="" id="salt">
+				<select id="salt2">
+					<option>tsp</option>
+					<option>oz</option>
+				</select> salt
+				<br>
+				<input type="number" name="" id="butter">
+				<select id="butter2">
+					<option>tbsp</option>
+					<option>sticks</option>
+				</select> butter
+				<br>
+				<input type="number" name="" id="eggs">
+				<select id="eggs2">
+					<option>single</option>
+					<option>dozen</option>
+				</select> eggs
+				<br>
+				<input type="number" name="" id="milk">
+				<select id="milk2">
+					<option>cups</option>
+					<option>half gallon</option>
+				</select> milk
+				<br>
+
+
+
+			</div>
+			
+
+			<div class="bb">
+	
+
+				<a href="orderone.html">
+					<div class="link">back</div>
+				</a>
+
+				<a onclick="confirm()" id="rightbutton">
+					<div class="link">continue</div>
+				</a>
+				<a href="ordertime.html" id="rightbutton2">
+					<div class="link">continue</div>
+				</a>
+			</div>
+		 
+			
+
+		</div>
+	</div>
+
+</body>
+</html>

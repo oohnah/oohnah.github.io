@@ -94,7 +94,9 @@ h3{
   padding: 1em;
 }
 
-
+.layout > div.nav{
+  padding: .5em;
+}
 /*octopus image width*/
 .octo{
   width: 100%;
@@ -217,8 +219,34 @@ b{
   width: 100%;
 }
 
-
-
+.breadcrumb{
+	grid-column: 2/11;
+	grid-row-start: 1;
+	text-align: left;
+	z-index: 1;
+	margin-top: 1em;
+}
+.imgfullwidth{
+	grid-column: 2/11;
+	grid-row-start: 2;
+	text-align: center;
+	z-index: 1;
+}
+.textmiddle{
+	grid-column: 2/11;
+	vertical-align: middle;
+	grid-row-start: 3;
+	z-index: 1;
+	padding-top: 0;
+	font-size: 1.5em;
+	line-height: 2em;
+}
+.spacer{
+	width: 100px;
+}
+.mback{
+	font-size: 1.5em;
+}
 
 
 /*--*/
@@ -258,16 +286,21 @@ b{
 	position: absolute;
 	top: 50%;
 	left: 50%;
+  font-size: 2.5em;
 	-ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 .grid-overlay-text > h2, .grid-overlay-text > p, .grid-overlay-text > hr {
 	color: white;
+  line-height: 1.5em;
 	margin-bottom: .25em;
 	margin-top: .25em;
 }
 
+.grid-overlaytext > h2 {
+  line-height: 1.5em;
+}
 
 .foot{
 	grid-column: 1/13;
