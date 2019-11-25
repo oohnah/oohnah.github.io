@@ -1,0 +1,248 @@
+/*--------------------------------basics-------------------------------*/
+body{
+	padding: 0;
+	margin: 0;
+	font-size: 36px;
+}
+
+a{
+	border: none;
+	text-decoration: none;
+}
+
+/*-----------------------------font styles------------------------*/
+@font-face {
+	font-family: 'moon';
+	src: url('MoonTypeface/Moon_Light.otf');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i');
+
+h1{
+	font-family: 'moon';
+	font-weight: normal;
+	font-size: 60px;
+	color:#9999CC;
+
+}
+
+h2{
+	font-family: 'moon';
+	font-weight: normal;
+	font-size: 48px;
+	color:#9999CC;
+
+
+}
+
+/*--------------------------content framing box------------------------*/
+.contents{
+	margin-top: 50px;
+	margin-bottom: 150px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+
+/*------------landing and logo--------------------------------------------*/
+
+#titleslide{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: #9999CC;
+	background: -webkit-linear-gradient(#9999CC, #FFCCCC); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#9999CC, #FFCCCC); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#9999CC, #FFCCCC); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#9999CC, #FFCCCC); /* Standard syntax */
+	background-attachment: fixed;
+}
+
+#logo{
+	margin-top: 100px;
+	margin-bottom: 200px;
+	width: 80%;
+}
+
+/*------------explore my work section-----------------------------------------------------*/
+
+#workslide{
+	position: relative;
+	left: 0;
+	top: 0;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	background-color: #FFFFFF;
+	//background: -webkit-linear-gradient(#FFCCCC, #9999CC); /* For Safari 5.1 to 6.0 */
+    //background: -o-linear-gradient(#FFCCCC, #9999CC); /* For Opera 11.1 to 12.0 */
+    //background: -moz-linear-gradient(#FFCCCC, #9999CC); /* For Firefox 3.6 to 15 */
+    //background: linear-gradient(#FFCCCC, #9999CC); /* Standard syntax */
+
+}
+
+#worktext{
+	color: #9999CC;
+	font-family: 'moon';
+	margin-top: 100px;
+	margin-bottom: 0;
+	font-size: 60px;
+}
+
+.workicons{
+	width: 500px;
+	display: inline-block;
+	margin: 5%;
+	transition: .75s;
+	margin-bottom: 100px;
+}
+
+.workicons:hover{
+	width: 524px;
+}
+
+/*----------------about me section--------------------------------------------*/
+/*background box*/
+#aboutslide{
+	background-color: #9999CC;
+	background-image: url('images/polka_dot.svg');
+	background-attachment: fixed;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	color: #FFFFFF;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 48px;
+
+}
+
+
+
+#go{
+	background-color: #FFFFFF;
+	color: #9999CC;
+	text-decoration: none;
+	padding: 5px;
+	font-family: 'Montserrat';
+	border-radius: 3px;
+	margin: 5px;
+	font-size: 36px;
+	transition: .75s;
+}
+
+#go:hover{
+	background-color: #FFCCCC;
+}
+
+#textbox{
+	border: 1px solid #7B7BBA;
+	border-radius: 3px;
+	font-size: 36px;
+	font-family: 'Montserrat';
+	font-weight: 300;
+	padding: 5px;
+	margin: 25px;
+}
+
+/*------------------------resume section-----------------------------------*/
+
+#resumeslide{
+	position: relative;
+	left: 0;
+	top: 0;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	background-color: #FFFFFF;
+}
+
+#resumeslide h1{
+	color: #FFCCCC;
+}
+
+.workedat{
+	width: 70%;
+	display: inline-block;
+	margin: 20px;
+	vertical-align: middle;
+	transition: .75s;
+}
+
+.workedat:hover{
+	width: 75%;
+}
+
+.toolused{
+	width: 30%;
+	display: inline-block;
+	margin: 1%;
+	vertical-align: middle;
+	transition: .75s;
+}
+
+#resumebutton{
+	padding: 20px;
+	background-color: #FFCCCC;
+	border-radius: 3px;
+	transition: .75s;
+	font-family: 'moon';
+	color: #FFFFFF;
+	font-size: 60px;
+
+}
+
+#resumebutton:hover{
+	background-color: #9999CC;
+	font-size: 66px;
+}
+
+.tooltipster-sidetip.tooltipster-light.tooltipster-light-customized .tooltipster-box {
+	background-color: #FFFFFF;
+	padding: 2px;
+	border-radius: 3px;
+}
+
+.tooltipster-sidetip.tooltipster-light.tooltipster-light-customized .tooltipster-content {
+	font-family: 'Montserrat';
+	font-size: 22px;
+	color: #FFCCCC;
+}
+
+/*--------------------------contact section---------------------------------*/
+#contactslide{
+	background-color: #FFCCCC;
+	background-image: url('images/polka_dot_pink.svg');
+	background-attachment: fixed;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	color: #FFFFFF;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 36px;
+}
+.contact{
+	font-size: 120px;
+	color: #FFFFFF;
+	margin: 10px;
+	transition: .75s;
+}
+
+.contact:hover{
+	font-size: 130px;
+}
+

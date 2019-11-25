@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kitchen Helper</title>
+	<link rel="stylesheet" type="text/css" href="khstyle.css">
+	<link rel="icon" type="image/png" href="svgs/logosq.png">
+
+	<link rel="stylesheet" type="text/css" href="cssmap-continents/cssmap-continents.css" media="screen" />
+
+</head>
+<body>
+	<a href="index.html"><img src="svgs/logo.svg" id="logo"></a>
+
+	<div id ="screen">
+		<div id="nav">
+			<a href="appstart.html"><img src="svgs/home.svg" class="nav"></a>
+			<a href="fridgescan.html"><img src="svgs/fridge.svg" class="nav"></a>
+			<a href="favorites.html"><img src="svgs/starline.svg" class="nav"></a>
+			<a href="settings.html"><img src="svgs/settings.svg" class="nav"></a>
+		</div>
+		<div id="search">
+			<input type="text" name="searchbar" id="searchbar" class="searchbar">
+			<a href="searchresults.html"><img src="svgs/search.svg" class="searchbar" id="Q"></a>			
+		</div>
+		<div id="content">
+			<br>
+			<h1>Map:</h1>
+				<div id="map-continents">
+				 <ul class="continents">
+				  <li class="c1"><a href="internat/africa.html">Africa</a></li>
+				  <li class="c2"><a href="internat/asia.html">Asia</a></li>
+				  <li class="c3"><a href="internat/australia.html">Australia</a></li>
+				  <li class="c4"><a href="internat/europe.html">Europe</a></li>
+				  <li class="c5"><a href="internat/na.html">North America</a></li>
+				  <li class="c6"><a href="internat/sa.html">South America</a></li>
+				 </ul>
+				</div>
+
+		</div>
+	</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cssmapsplugin.com/5/jquery.cssmap.min.js"></script>
+<script type="text/javascript" src="includes/script.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+// CSSMap;
+$("#map-continents").CSSMap({
+  "size": 1450,
+  "mapStyle": "custom"
+});
+// END OF THE CSSMap;
+
+});
+</script>
+</body>
+</html>

@@ -1,170 +1,243 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-
+/*--------------------------------basics-------------------------------*/
 body{
-	font-size: 14px;
-	font-family: 'Roboto', sans-serif;
-	padding: 0px;
-	margin: 0px;
-	background-color: #F7F7F7;
-	color: #333333;
+	padding: 0;
+	margin: 0;
 
 }
 
 a{
-	color: #663CA6;
+	border: none;
 	text-decoration: none;
-	text-transform: uppercase;
-	transition: .75s;
 }
 
-a:hover{
- 	color: #333333;
+/*-----------------------------font styles------------------------*/
+@font-face {
+	font-family: 'moon';
+	src: url('MoonTypeface/Moon_Light.otf');
 }
 
-.now a{
-	color: #777;
-	text-decoration: underline;
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i');
 
 h1{
-	text-transform: uppercase;
-	/*//border-bottom: 5px solid #333333;
-	//border-right: 5px solid #333333;*/
-	box-shadow: 5px 5px 0px #333333;
-	border-radius: 10px;
-	width: 500px;
-	padding: 15px;
-	color: #663CA6;
-	letter-spacing: 5px;
-	font-size: 60px;
+	font-family: 'moon', sans-serif;
+	font-weight: normal;
+	font-size: 36px;
+
 }
 h2{
-	text-transform: uppercase;
-	color: #663CA6;
-	letter-spacing: 2px;
-	margin: 10px;
-	font-size: 24px;
+	font-family: 'moon';
+	font-weight: normal;
+	font-size: 28px;
+
 }
 
-/*"abridged version" header*/
-.h3{
-	letter-spacing: 1px;
-	margin: 00px;
-	font-size: 18px;
+/*--------------------------content framing box------------------------*/
+.contents{
+	margin-top: 50px;
+	margin-bottom: 100px;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
-#navbar{
-	position: fixed;
-	top: 10px;
-	left: 10px;
-	z-index: 10;
-	padding: 10px;
-	border-radius: 10px;
-	background-color: #663CA6;
-	opacity: .75;
-	transition: .75s;
 
-	color: #F7F7F7;
-}
+/*------------landing and logo--------------------------------------------*/
 
-#navbar:hover {
-	opacity: 1;
-}
-
-#navbar a{
-	color: #F7F7F7;
-	transition: .75s;
-}
-
-#navbar a:hover{
-	font-weight: bold;
-	letter-spacing: 1px;
-}
-
-#intro{
+#titleslide{
+	position: relative;
+	top: 0;
+	left: 0;
 	width: 100%;
-	height: 500px;
+	height: 100%;
+	text-align: center;
+	background-color: #9999CC;
+	background: -webkit-linear-gradient(#9999CC, #FFCCCC); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#9999CC, #FFCCCC); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#9999CC, #FFCCCC); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#9999CC, #FFCCCC); /* Standard syntax */
+	background-attachment: fixed;
+}
+
+#logo{
+	margin-top: 100px;
+	margin-bottom: 200px;
+	width: 400px;
+}
+
+/*------------explore my work section-----------------------------------------------------*/
+
+#workslide{
 	position: relative;
-	top: 0px;
-	left: 0px;
-	margin: 0px;
-	background-color: #F7F7F7;
-	padding-top: 100px;
-	border-bottom: 50px solid #663CA6;
-}
-#intro p{
-	font-size: 18px;
-	letter-spacing: 1px;
-}
-
-#portfolio{
-	position: relative;
-	width: 80%;
-	background-color: #F7F7F7;
-	padding: 10%;
-}
-
-#portfolio p{
-	margin: 10px;
-}
-
-#main{
-	position: relative;
-	width: 70%;
-	padding: 15%;
-	padding-top: 5%;
-}
-
-#main p{
-	margin: 10px;
-	margin-bottom: 48px;
-}
-
-/* i can't remember what these are for but i don't think they do anything???
-
-#illustration{
-	position: relative;
+	left: 0;
+	top: 0;
+	margin: 0;
 	width: 100%;
-	background-color: #f5f5f5;
-}
-#video{
-	position: relative;
-	width: 100%;
-	background-color: #F7F7F7;
-}
-*/
-.portpiece{
-	display: inline-block;
-	width: 300px;
-	margin: 10px;
-}
-
-
-.ppimg{
-	width: 100%;
-	transition: .75s;
-	border-radius: 10px;
+	height: auto;
+	text-align: center;
+	background-color: #FFFFFF;
+	//background: -webkit-linear-gradient(#FFCCCC, #9999CC); /* For Safari 5.1 to 6.0 */
+    //background: -o-linear-gradient(#FFCCCC, #9999CC); /* For Opera 11.1 to 12.0 */
+    //background: -moz-linear-gradient(#FFCCCC, #9999CC); /* For Firefox 3.6 to 15 */
+    //background: linear-gradient(#FFCCCC, #9999CC); /* Standard syntax */
 
 }
 
-
-.ppimg:hover{
-	box-shadow: 5px 5px 0px #333333;
-
-}
-
-/*contact icons*/
-.contact{
+#worktext{
+	color: #9999CC;
+	font-family: 'moon';
+	margin-top: 50px;
+	margin-bottom: 0;
 	font-size: 36px;
-	margin: 20px;
-	margin-left: 0px;
 }
 
-.largerfont{
+.workicons{
+	width: 265px;
+	display: inline-block;
+	margin: 5%;
+	transition: .75s;
+	margin-bottom: 100px;
+}
+
+.workicons:hover{
+	width: 275px;
+}
+
+/*----------------about me section--------------------------------------------*/
+/*background box*/
+#aboutslide{
+	background-color: #9999CC;
+	background-image: url('images/polka_dot.svg');
+	background-attachment: fixed;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	color: #FFFFFF;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 18px;
+
+}
+
+
+
+#go{
+	background-color: #FFFFFF;
+	color: #9999CC;
+	text-decoration: none;
+	padding: 5px;
+	font-family: 'Montserrat';
+	border-radius: 3px;
+	margin: 5px;
+	font-size: 20px;
+	transition: .75s;
+}
+
+#go:hover{
+	background-color: #FFCCCC;
+}
+
+#textbox{
+	border: 1px solid #7B7BBA;
+	border-radius: 3px;
+	font-size: 20px;
+	font-family: 'Montserrat';
+	font-weight: 300;
+	padding: 5px;
+}
+
+/*------------------------resume section-----------------------------------*/
+
+#resumeslide{
+	position: relative;
+	left: 0;
+	top: 0;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	background-color: #FFFFFF;
+}
+
+#resumeslide h1{
+	color: #FFCCCC;
+}
+
+.workedat{
+	width: 25%;
+	display: inline-block;
+	margin: 20px;
+	vertical-align: middle;
+	transition: .75s;
+}
+
+.workedat:hover{
+	width: 26%;
+}
+
+.toolused{
+	width: 12%;
+	display: inline-block;
+	margin: 1%;
+	vertical-align: middle;
+	transition: .75s;
+}
+
+#resumebutton{
+	padding: 10px;
+	background-color: #FFCCCC;
+	border-radius: 3px;
+	transition: .75s;
+	font-family: 'moon';
+	color: #FFFFFF;
+	font-size: 36px;
+
+}
+
+#resumebutton:hover{
+	background-color: #9999CC;
+	font-size: 38px;
+}
+
+.tooltipster-sidetip.tooltipster-light.tooltipster-light-customized .tooltipster-box {
+	background-color: #FFFFFF;
+	padding: 2px;
+	border-radius: 3px;
+}
+
+.tooltipster-sidetip.tooltipster-light.tooltipster-light-customized .tooltipster-content {
+	font-family: 'Montserrat';
+	font-size: 22px;
+	color: #FFCCCC;
+}
+
+/*--------------------------contact section---------------------------------*/
+#contactslide{
+	background-color: #FFCCCC;
+	background-image: url('images/polka_dot_pink.svg');
+	background-attachment: fixed;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	color: #FFFFFF;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	text-align: center;
+	padding-top: 50px;
 	font-size: 18px;
 }
+.contact{
+	font-size: 100px;
+	color: #FFFFFF;
+	margin: 24px;
+	transition: .75s;
+}
 
-
-
-
+.contact:hover{
+	font-size: 110px;
+}
 

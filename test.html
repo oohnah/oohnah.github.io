@@ -1,0 +1,13 @@
+<div id="scene">
+  <div class=layer data-depth="0.6"><img src="illustrations/octopus.png" alt=""></div>
+  <div class=layer data-depth="0.2"><img src="illustrations/waves1.png" alt=""></div>
+</div>
+
+<!-----PARALLAX JS---->
+<script src="jquery_plugins/jquery.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>-->
+<script src="jquery_plugins/parallax.js"></script>
+<script>
+  var scene = document.getElementById('scene');
+  var parallaxInstance = new Parallax(scene);
+</script>

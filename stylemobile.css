@@ -1,0 +1,388 @@
+/*------------font imports---------------*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500&display=swap');
+@font-face {
+	font-family: 'moonLight';
+	src: url('fonts/MoonTypeface/Moon_Light.otf');
+}
+@font-face {
+	font-family: 'moonBold';
+	src: url('fonts/MoonTypeface/Moon_Bold.otf');
+}
+
+/*-----big global styles------*/
+
+body{
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+	padding: 0;
+	margin: 0;
+	line-height: 1.5em;
+  font-size: 16px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+p > a{
+	font-weight: 500;
+	color: #2b2c77;
+	transition: .5s;
+}
+
+p > a:hover{
+	color: #f16163;
+}
+
+.link{
+	font-style: italic;
+	color: #2b2c77;
+	transition: .5s;
+	text-decoration: underline;
+}
+.link:hover{
+	color: #f16163;
+
+}
+.social{
+	font-size: 2.5em;
+	color: #2b2c77;
+	transition: .5s;
+	margin-right: .25em;
+}
+.social:hover{
+	color: #f16163;
+
+}
+/*-------------header styles------------------*/
+h1{
+  margin-bottom: .1em;
+  font-family: 'moonBold';
+  color: #2b2c77;
+	line-height: 1em;
+}
+h2{
+  margin-bottom: .1em;
+  font-family: 'moonBold';
+  color: #2b2c77;
+	line-height: 1em;
+}
+
+h3{
+  margin-top: 0;
+  font-weight: 400;
+	margin-bottom: .25em;
+}
+
+.abouttext li{
+	margin-bottom: .5em;
+}
+
+/*------------layout wrapper & grid setup-------------*/
+.layout {
+  display: grid;
+  grid-template-columns:repeat(12, 1fr);
+  grid-gap: 1em;
+  margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: .5em;
+}
+/*grid box padding*/
+.layout > div{
+  padding: 1em;
+}
+
+.layout > div.nav{
+  padding: .5em;
+}
+/*octopus image width*/
+.octo{
+  width: 100%;
+}
+
+/*-----------------------grid boxes-----------------*/
+.menu{
+  grid-column: 8/12;
+	grid-row-start: 1;
+  text-align: right;
+	z-index: 3;
+	align-items: center;
+  font-size: 1.5em;
+}
+div.menu {
+  padding-top: 3em;
+}
+/*
+div.nav{
+  padding-top: 3.5em;
+}*/
+
+
+
+.menutext{
+	font-family: moonBold;
+	font-size: 1.5em;
+	color: #2b2c77;
+	transition: .5s;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	position: relative;
+
+}
+.menutext.is-active{
+	opacity: 0;
+}
+
+.nav{
+	grid-column: 1/13;
+	grid-row: 1/3;
+	z-index: 2;
+	background-color: #fff;
+	height: 0px;
+	padding: 8em;
+	padding-left: 7em;
+	border-radius: 1em;
+	overflow:hidden;
+	transition: height .75s;
+  font-size: 3em;
+}
+.nav.is-active{
+	height: 80%;
+
+}
+.nav li{
+	font-size: 1.25em;
+	line-height: 1.75em;
+	font-family: "moonBold";
+	list-style-type: none;
+	color: black;
+	transition: .5s;
+}
+
+.nav li:hover{
+	color: #f16163;
+}
+
+b{
+	font-weight: 400;
+}
+
+/*-----------*/
+
+.introimg{
+  grid-column: 2/12;
+	grid-row-start: 2;
+  text-align: center;
+	z-index: 1;
+}
+
+
+
+.abouttext{
+  grid-column: 2/12;
+  vertical-align: middle;
+	grid-row-start: 3;
+	z-index: 1;
+	padding-top: 0;
+  font-size: 1.5em;
+  line-height: 2em;
+
+}
+.abouttext h1, .aboutsearch h1, .work h1{
+	margin-top: 0;
+}
+
+
+/*portfolio section*/
+.work{
+  grid-column: 2/12;
+  text-align: center;
+	margin-bottom: 2em;
+}
+.aboutsearch{
+	grid-column: 2/11;
+	text-align: left;
+	margin-bottom: 4em;
+
+}
+/*extra design elements*/
+.waves1{
+  grid-column: 11/13;
+  align-self:flex-end;
+	grid-row-start: 2;
+	z-index: 1;
+}
+.deco{
+  width: 100%;
+}
+
+.breadcrumb{
+	grid-column: 2/11;
+	grid-row-start: 1;
+	text-align: left;
+	z-index: 1;
+	margin-top: 1em;
+}
+.imgfullwidth{
+	grid-column: 2/11;
+	grid-row-start: 2;
+	text-align: center;
+	z-index: 1;
+}
+.textmiddle{
+	grid-column: 2/11;
+	vertical-align: middle;
+	grid-row-start: 3;
+	z-index: 1;
+	padding-top: 0;
+	font-size: 1.5em;
+	line-height: 2em;
+}
+.spacer{
+	width: 100px;
+}
+.mback{
+	font-size: 1.5em;
+}
+
+
+/*--*/
+
+
+#workspacer{
+  height: 3em;
+}
+
+.workimg{
+  width: 100%;
+}
+.grid{
+	margin-top: 3em;
+}
+.grid-item{
+	width: 100%;
+	overflow: hidden;
+//	background: #eeeeee;
+}
+.grid-item:hover > .grid-overlay-wrap{
+	top:0;
+}
+
+.grid-overlay-wrap{
+	position: absolute;
+	top: -100%;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	transition: .75s;
+	background-color: #2b2c77;
+}
+
+.grid-overlay-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+  font-size: 2.5em;
+	-ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.grid-overlay-text > h2, .grid-overlay-text > p, .grid-overlay-text > hr {
+	color: white;
+  line-height: 1.5em;
+	margin-bottom: .25em;
+	margin-top: .25em;
+}
+
+.grid-overlaytext > h2 {
+  line-height: 1.5em;
+}
+
+.foot{
+	grid-column: 1/13;
+	//background-color: #eeeeee;
+	height: auto;
+	padding: 1em;
+	font-size: .75em;
+	color: #666666;
+}
+
+/*--misc styles--*/
+.cta, button{
+  text-decoration: none;
+  background: #f16163;
+  font-family: "moonBold";
+  width: auto;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  border-radius: 2em;
+  color: white;
+  transition: .75s;
+	border:none;
+  font-size: 1.5em;
+}
+
+.cta:hover, .galleryfilter:hover{
+  background: #39479e;
+}
+
+#landscaped{
+  display: none;
+}
+
+#servicectalandscape{
+  display: none;
+}
+
+#servicesfootspacer{
+  height: 4em;
+}
+
+button{
+	font-size: 2em;
+	margin: .25em;
+  margin-top: .5em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+button:focus{
+	outline: 0;
+}
+
+.button-group{
+  display: none;
+}
+/**search bar**/
+#textbox{
+	padding: .5em;
+	border-radius:.5em;
+	border: 1px solid #999;
+	width: 60%;
+	font-family: Montserrat;
+	font-size: 2em;
+	font-weight: 200;
+	margin-right: .5em;
+  margin-top: 1.5em;
+}
+
+a#go.cta{
+  font-size: 2em;
+}
+
+.galleryfilter:focus{
+	outline:0;
+	background-color: #39479e;
+}
+
+.nobg:hover, .nobg:focus{
+	background-color: none;
+}

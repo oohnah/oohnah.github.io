@@ -10,34 +10,37 @@ function favorite () {
 			aa="The Bartimaeus Trilogy";
 			break;
 		case "color":
-			aa="Purple, of course";
+			aa="Purple!";
 			break;
 		case "food":
 			aa="Ice cream, falafel, and fries";
 			break;
+		case "cookie":
+			aa="Chocolate chip!";
+			break;
 		case "song":
-			aa="Right now, it's Gravel to Tempo by Hayley Kiyoko";
+			aa="Right now, it's Monster by Dodie Clark";
 			break;
 		case "artist":
-			aa="Salvador Dali"
+			aa="Leigh Ellexson"
 			break;
 		case "tv show":
-			aa="Voltron, Steven Universe, and Miraculous Ladybug"
+			aa="Brooklyn 99"
 			break;
 		case "dessert":
 			aa="Ice cream";
 			break;
 		case "website":
-			aa="Tumblr";
+			aa="Youtube?";
 			break;
 		case "font":
-			aa="Righ now, I like and can afford Mission Gothic and Cylburn.";
+			aa="Right now, I'm pretty into Gotham";
 			break;
 		case "place":
 			aa="Bangkok, Thailand, or maybe Boston!"
 			break;
 		case "movie":
-			aa="Current favorite is Big Hero 6";
+			aa="Current favorite is Into the Spiderverse!";
 			break;
 		case "disney movie":
 			aa="Mulan, The Lion King, Big Hero 6";
@@ -49,7 +52,7 @@ function favorite () {
 			aa="Edy's French Silk"
 			break;
 		case "activity":
-			aa="Singing, designing/drawing, dancing, or watching a movie"
+			aa="Doing art, or playing the ukulele"
 			break;
 		case "chain restaurant":
 			aa="The Cheesecake Factory";
@@ -67,7 +70,7 @@ function favorite () {
 			aa="H&M";
 			break;
 		case "comic":
-			aa="1996 run of Nightwing, and Impulse";
+			aa="1996 run of Nightwing, Impulse, and 90s Young Justice";
 			break;
 		case "webcomic":
 			aa="Always Human, Gloomverse";
@@ -85,8 +88,11 @@ function favorite () {
 			aa="HackBeanpot";
 			break;
 		case "designer":
-			aa="Stefan Sagmeister";
-			break;	
+			aa="Chris Do";
+			break;
+		case "podcast":
+			aa="Design Matters with Debbie Millman";
+			break;
 		default:
 			aa="I guess I don't have a favorite one of those."
 

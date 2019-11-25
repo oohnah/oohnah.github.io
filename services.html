@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Amelia Oon | Boston Based Designer & Creative</title>
+    <meta name="description" content="Amelia Oon is a Boston-based graphic designer and multimedia creator with a focus on branding, web design, and motion grphics.">
+<!--CSS stylesheets--->
+    <link rel="stylesheet" media="(orientation: landscape)" href="style.css">
+    <link rel="stylesheet" media="(orientation: portrait)" href="stylemobile.css">
+    <link href="hamburgers.css" rel="stylesheet">
+<!--JS-->
+    <script type="text/javascript" src="jquery_plugins/aboutsearch.js"></script>
+    <script src="https://kit.fontawesome.com/dc970f7d76.js"></script>
+
+<!--favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+  </head>
+
+<!---begin body------->
+  <body>
+    <span id="top"></span>
+
+    <!--00: LAYOUT----------->
+    <div class="layout">
+
+    <!---01: MENU | hamburger menu here ------>
+      <div class="menu">
+        <div class="menutext">menu</div>
+
+        <button class="hamburger nobg hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div><!--end 01 menu-->
+
+    <!---01.5:MENU TEXT-->
+      <div class="nav">
+        <ul>
+          <li><a href="index.html#top">home</a></li>
+          <li><a href="about.html#top">about</a></li>
+          <li><a href="services.html">services</a></li>
+          <li><a href="contact.html">contact</a></li>
+
+        </ul>
+      </div>
+
+    <!--02.00: INTRO IMG | Image for intro, OCTOPUS PARALLAX------------>
+      <div class="introimg">
+        <div id="scene">
+          <div class=layer data-depth="0.1"><img src="illustrations/services/seven.png" alt="bluewave" class="octo"></div>
+          <div class=layer data-depth="0.2"><img src="illustrations/services/six.png" alt="coral bubble" class="octo"></div>
+          <div class=layer data-depth="0.3"><img src="illustrations/services/five.png" alt="turquoise bubble" class="octo"></div>
+          <div class=layer data-depth="0.4"><img src="illustrations/services/four.png" alt="turqoise waves" class="octo"></div>
+          <div class=layer data-depth="0.5"><img src="illustrations/services/three.png" alt="blue bubble" class="octo"></div>
+          <div class=layer data-depth="0.8"><img src="illustrations/services/two.png" alt="blue wave" class="octo"></div>
+          <div class=layer data-depth="1.2"><img src="illustrations/services/one.png" alt="coral bubble" class="octo"></div>
+
+        </div>
+      </div><!--end 02.00 intro img-->
+
+    <!--02.01: INTRO TEXT | quick about with a cta--------------->
+      <div class="abouttext">
+        <h1>Let's dive right in!</h1>
+
+        <p>
+          <h3>Specialties</h3>
+          I currently have the most experience in the following areas:
+
+          <ul>
+            <li>
+              <b>Motion Graphics</b>
+              <br>
+              Storyboarding, styleframes and 2d After Effects animation
+            <li>
+              <b>Web Design</b>
+              <br>
+              Information architecture, wireframing, visual design, and front end development
+            </li>
+            <li>
+              <b>Collateral Design</b>
+              <br>
+              Social media graphics, banner ads, whitepapers,
+              and other marketing materials
+            </li>
+          </ul>
+        </p>
+        <p>
+          <h3>Process</h3>
+          I take a custom, collaborative approach to each project. After hearing your thoughts,
+          I like to take a look at your business goals and how creative can help reach them.
+          Together we fine-tune the work to ensure it best serves its purpose.
+        </p>
+
+        <br>
+          <a href="mailto:ameliaoon@gmail.com" class="cta">
+            <span id="servicectalandscape">get a free consultation</span>
+            <span id="servicectaportrait">get free consult</span>
+          </a>
+
+
+
+      <div id="servicesfootspacer"> </div>
+
+
+      </div><!--end 02.01 intro text-->
+
+
+
+
+
+
+    <!--04.00 spacer---------------------------->
+    <div class="foot">
+      copyright &copy; Amelia Oon 2019
+    </div>
+
+
+    </div><!--end layout-->
+
+  </body>
+
+
+
+
+
+
+  <!---JS and Jquery Scripts---->
+    <!---PARALLAX JS---->
+    <script src="jquery_plugins/jquery.js"></script>
+    <script src="jquery_plugins/parallax.js"></script>
+    <script>
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+
+    var scene2 = document.getElementById('scene2');
+    var parallax = new Parallax(scene2);
+    </script>
+    <!---end parallax------>
+
+
+    <!---ISOTOPE JS----------->
+    <script src="jquery_plugins/isotope-min.js"></script>
+
+    <script type="text/javascript">
+
+    // init Isotope
+    var $grid = $('.grid').isotope({
+      // options
+      itemSelector: '.grid-item',
+      layoutMode: 'fitRows'
+    });
+    // filter items on button click
+    $('.filter-button-group').on( 'click', 'button', function() {
+      var filterValue = $(this).attr('data-filter');
+      $grid.isotope({ filter: filterValue });
+    });
+    </script>
+    <!---end isotope------->
+
+    <!--hamburger-->
+    <script>
+  // Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  var nav = document.querySelector(".nav");
+  var menutext = document.querySelector(".menutext");
+  // On click
+  hamburger.addEventListener("click", function() {
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    // Do something else, like open/close menu
+    nav.classList.toggle("is-active");
+    menutext.classList.toggle("is-active");
+
+  });
+</script>
+<!--end hamburger-->
+
+</html>
