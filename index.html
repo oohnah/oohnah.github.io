@@ -268,16 +268,15 @@
 
     <script type="text/javascript">
 
-    // init Isotope
-    var $grid = $('.grid').isotope({
-      // options
-      itemSelector: '.grid-item',
-      layoutMode: 'fitRows'
+    var $grid = $('.grid').imagesLoaded( function() {
+  // init Isotope after all images have loaded
+      $grid.isotope({
+        // options...
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows'
+      });
     });
-    // layout Isotope after each image loads
-    $grid.imagesLoaded().progress( function() {
-      $grid.isotope('layout');
-    });
+
     // filter items on button click
     $('.filter-button-group').on( 'click', 'button', function() {
       var filterValue = $(this).attr('data-filter');
