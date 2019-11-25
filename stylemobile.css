@@ -227,13 +227,13 @@ b{
 	margin-top: 1em;
 }
 .imgfullwidth{
-	grid-column: 2/11;
+	grid-column: 1/13;
 	grid-row-start: 2;
 	text-align: center;
 	z-index: 1;
 }
 .textmiddle{
-	grid-column: 2/11;
+	grid-column: 1/13;
 	vertical-align: middle;
 	grid-row-start: 3;
 	z-index: 1;
@@ -241,6 +241,10 @@ b{
 	font-size: 1.5em;
 	line-height: 2em;
 }
+.contentpic{
+	width: 100%;
+}
+
 .spacer{
 	width: 100px;
 }
