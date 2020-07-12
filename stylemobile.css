@@ -1,5 +1,7 @@
 /*------------font imports---------------*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500&display=swap');
+@import url("https://use.typekit.net/kcc6ovm.css");
+
 @font-face {
 	font-family: 'moonLight';
 	src: url('fonts/MoonTypeface/Moon_Light.otf');
@@ -14,16 +16,20 @@
 body{
   background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
 	padding: 0;
 	margin: 0;
 	line-height: 1.5em;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 a{
   text-decoration: none;
   color: inherit;
+}
+
+p{
+	margin-top: .4em;
 }
 
 p > a{
@@ -59,14 +65,16 @@ p > a:hover{
 /*-------------header styles------------------*/
 h1{
   margin-bottom: .1em;
-  font-family: 'moonBold';
+  font-family: 'sofia-pro', sans-serif;
+	font-weight: 700;
   color: #2b2c77;
 	line-height: 1em;
 }
 h2{
   margin-bottom: .1em;
-  font-family: 'moonBold';
-  color: #2b2c77;
+	font-family: 'sofia-pro', sans-serif;
+	font-weight: 700;
+	color: #2b2c77;
 	line-height: 1em;
 }
 
@@ -122,7 +130,8 @@ div.nav{
 
 
 .menutext{
-	font-family: moonBold;
+	font-family: "sofia-pro", sans-serif;
+	font-weight: 700;
 	font-size: 1.5em;
 	color: #2b2c77;
 	transition: .5s;
@@ -156,7 +165,8 @@ div.nav{
 .nav li{
 	font-size: 1.25em;
 	line-height: 1.75em;
-	font-family: "moonBold";
+	font-family: "sofia-pro", sans-serif;
+	font-weight: 700;
 	list-style-type: none;
 	color: black;
 	transition: .5s;
@@ -188,7 +198,7 @@ b{
 	z-index: 1;
 	padding-top: 0;
   font-size: 1.5em;
-  line-height: 2em;
+  line-height: 1.5em;
 
 }
 .abouttext h1, .aboutsearch h1, .work h1{
@@ -317,12 +327,13 @@ b{
 .cta, button{
   text-decoration: none;
   background: #f16163;
-  font-family: "moonBold";
+  font-family: "sofia-pro", sans-serif;
+	font-weight: 700;
   width: auto;
   padding-right: 1.5em;
   padding-left: 1.5em;
   padding-top: .5em;
-  padding-bottom: .5em;
+  padding-bottom: .75em;
   border-radius: 2em;
   color: white;
   transition: .75s;
@@ -370,14 +381,14 @@ button:focus{
 	border: 1px solid #999;
 	width: 60%;
 	font-family: Montserrat;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: 200;
 	margin-right: .5em;
-  margin-top: 1.5em;
+  margin-top: 1em;
 }
 
 a#go.cta{
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .galleryfilter:focus{

@@ -1,5 +1,6 @@
 /*------------font imports---------------*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500&display=swap');
+@import url("https://use.typekit.net/kcc6ovm.css");
 @font-face {
 	font-family: 'moonLight';
 	src: url('fonts/MoonTypeface/Moon_Light.otf');
@@ -13,17 +14,20 @@
 
 body{
   background-color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
+  font-family: 'sofia-pro', sans-serif;
+  font-weight: 300;
 	padding: 0;
 	margin: 0;
-	line-height: 1.25em;
+	line-height: 1.3em;
+	font-size: 20px;
 }
 
 a{
   text-decoration: none;
   color: inherit;
 }
+
+p {margin-top: .5em;}
 
 p > a{
 	font-weight: 500;
@@ -57,22 +61,25 @@ p > a:hover{
 }
 /*-------------header styles------------------*/
 h1{
-  margin-bottom: .1em;
-  font-family: 'moonBold';
-  color: #2b2c77;
-	line-height: 1em;
+  margin-bottom: .05em;
+	font-family: 'sofia-pro', sans-serif;
+	font-weight: 700;
+	color: #2b2c77;
+	line-height: 1.1em;
+	font-size: 1.75em;
 }
 h2{
   margin-bottom: .1em;
-  font-family: 'moonBold';
-  color: #2b2c77;
+	font-family: 'sofia-pro', sans-serif;
+	font-weight: 700;
+	color: #2b2c77;
 	line-height: 1em;
 }
 
 h3{
   margin-top: 0;
   font-weight: 400;
-	margin-bottom: .25em;
+	margin-bottom: .05em;
 }
 
 .abouttext li{
@@ -108,8 +115,9 @@ h3{
 	align-items: center;
 }
 .menutext{
-	font-family: moonBold;
-	font-size: 1.5em;
+	font-family: 'sofia-pro', sans-serif;
+	font-weight: 700;
+	font-size: 1.4em;
 	color: #2b2c77;
 	transition: .5s;
 	margin: 0;
@@ -141,7 +149,8 @@ h3{
 .nav li{
 	font-size: 1.25em;
 	line-height: 1.75em;
-	font-family: "moonBold";
+	font-family: 'sofia-pro', sans-serif;
+	font-weight: 700;
 	list-style-type: none;
 	color: black;
 	transition: .5s;
@@ -195,6 +204,8 @@ b{
 	grid-row-start: 2;
 	z-index: 1;
 	padding-top: 0;
+	display: grid;
+	place-content: center;
 }
 
 .textright{
@@ -225,7 +236,7 @@ b{
 	margin-bottom: 2em;
 }
 .aboutsearch{
-	grid-column: 2/11;
+	grid-column: 7/12;
 	text-align: left;
 	margin-bottom: 4em;
 
@@ -262,6 +273,7 @@ b{
 	overflow: hidden;
 	margin: 0em;
 //	background: #eeeeee;
+	margin: .2em;
 }
 .grid-item:hover > .grid-overlay-wrap{
 	top:0;
@@ -306,16 +318,18 @@ b{
 .cta, button{
   text-decoration: none;
   background: #f16163;
-  font-family: "moonBold";
+  font-family: "sofia-pro",sans-serif;
+	font-weight: 700;
   width:fit-content;
   padding-right: 1em;
   padding-left: 1em;
   padding-top: .5em;
-  padding-bottom: .5em;
-  border-radius: 1.5em;
+  padding-bottom: .7em;
+  border-radius: 1.6em;
   color: white;
   transition: .75s;
 	border:none;
+
 }
 
 .cta:hover, .galleryfilter:hover{
@@ -352,6 +366,7 @@ button:focus{
 	font-size: 1em;
 	font-weight: 200;
 	margin-right: .5em;
+	margin-top: 1em;
 }
 
 .galleryfilter:focus{
