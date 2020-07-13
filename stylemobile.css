@@ -75,7 +75,7 @@ h2{
 	font-family: 'sofia-pro', sans-serif;
 	font-weight: 700;
 	color: #2b2c77;
-	line-height: 1em;
+	line-height: 1.15em;
 }
 
 h3{
@@ -103,7 +103,7 @@ h3{
 }
 
 .layout > div.nav{
-  padding: .5em;
+  padding: 0em;
 }
 /*octopus image width*/
 .octo{
@@ -116,12 +116,13 @@ h3{
 	grid-row-start: 1;
   text-align: right;
 	z-index: 3;
+//	display: grid;
 	align-items: center;
   font-size: 1.5em;
 }
-div.menu {
+/*div.menu {
   padding-top: 3em;
-}
+}*/
 /*
 div.nav{
   padding-top: 3.5em;
@@ -132,7 +133,7 @@ div.nav{
 .menutext{
 	font-family: "sofia-pro", sans-serif;
 	font-weight: 700;
-	font-size: 1.5em;
+	font-size: 1.15em;
 	color: #2b2c77;
 	transition: .5s;
 	margin: 0;
@@ -189,6 +190,12 @@ b{
 	z-index: 1;
 }
 
+.imgleft{
+	grid-column: 1/12;
+}
+.textrightflow{
+	grid-column: 2/12;
+}
 
 
 .abouttext{
@@ -234,7 +241,8 @@ b{
 	grid-row-start: 1;
 	text-align: left;
 	z-index: 1;
-	margin-top: 1em;
+	display: grid;
+	align-content: center;
 }
 .imgfullwidth{
 	grid-column: 1/13;
@@ -249,7 +257,7 @@ b{
 	z-index: 1;
 	padding-top: 0;
 	font-size: 1.5em;
-	line-height: 2em;
+	line-height:1.5em;
 }
 
 
