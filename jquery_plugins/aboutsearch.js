@@ -88,7 +88,7 @@ function favorite () {
 			aa="HackBeanpot";
 			break;
 		case "designer":
-			aa="Chris Do";
+			aa="Jen & Amy Hood of Hoodzpah";
 			break;
 		case "podcast":
 			aa="Design Matters with Debbie Millman";

@@ -157,10 +157,10 @@ div.nav{
 	border-radius: 1em;
 	overflow:hidden;
 	transition: height .75s;
-  font-size: 3em;
+  font-size: 2em;
 }
 .nav.is-active{
-	height: 80%;
+	height: 100%;
 
 }
 .nav li{
@@ -204,7 +204,7 @@ b{
 	grid-row-start: 3;
 	z-index: 1;
 	padding-top: 0;
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 1.5em;
 
 }
@@ -256,7 +256,7 @@ b{
 	grid-row-start: 3;
 	z-index: 1;
 	padding-top: 0;
-	font-size: 1.5em;
+	font-size: 1em;
 	line-height:1.5em;
 }
 
@@ -334,23 +334,19 @@ b{
 /*--misc styles--*/
 .cta, button{
   text-decoration: none;
-  background: #f16163;
   font-family: "sofia-pro", sans-serif;
 	font-weight: 700;
+  color: #f16163;
   width: auto;
-  padding-right: 1.5em;
-  padding-left: 1.5em;
-  padding-top: .5em;
-  padding-bottom: .75em;
   border-radius: 2em;
-  color: white;
   transition: .75s;
 	border:none;
-  font-size: 1.5em;
+  font-size: 1.25em;
+	text-align: left;
 }
 
 .cta:hover, .galleryfilter:hover{
-  background: #39479e;
+  color: #39479e;
 }
 
 #landscaped{
