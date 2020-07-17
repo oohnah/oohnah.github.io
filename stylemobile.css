@@ -190,11 +190,15 @@ b{
 	z-index: 1;
 }
 
-.imgleft{
-	grid-column: 1/12;
-}
-.textrightflow{
+.boxleft{
 	grid-column: 2/12;
+}
+.boxright{
+	grid-column: 2/12;
+}
+
+.boxfull{
+  grid-column: 2/12;
 }
 
 

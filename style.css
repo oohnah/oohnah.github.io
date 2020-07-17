@@ -170,11 +170,11 @@ b{
 	grid-column: 2/7;
 }
 .boxright{
-	grid-column: 7/11;
+	grid-column: 7/12;
 }
 
 .boxfull{
-  grid-column: 2/11;
+  grid-column: 2/12;
 }
 
 .imgthreefour{
@@ -191,7 +191,7 @@ b{
 	margin-top: 1em;
 }
 .imgfullwidth{
-	grid-column: 2/11;
+	grid-column: 2/12;
 	grid-row-start: 2;
 	text-align: center;
 	z-index: 1;
@@ -232,6 +232,7 @@ b{
 .abouttext h1, .aboutsearch h1{
 	margin-top: 0;
 }
+
 
 
 /*portfolio section*/
