@@ -166,12 +166,17 @@ b{
   text-align: center;
 	z-index: 1;
 }
-.imgleft{
+.boxleft{
 	grid-column: 2/7;
 }
-.textrightflow{
+.boxright{
 	grid-column: 7/11;
 }
+
+.boxfull{
+  grid-column: 2/11;
+}
+
 .imgthreefour{
 	grid-column: 1/8;
 	grid-row-start: 2;
