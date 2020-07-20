@@ -114,13 +114,13 @@ h3{
 
 /*-----------------------grid boxes-----------------*/
 .menu{
-  grid-column: 8/12;
+  grid-column: 7/13;
 	grid-row-start: 1;
   text-align: right;
 	z-index: 3;
 //	display: grid;
 	align-items: center;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 /*div.menu {
   padding-top: 3em;
@@ -243,7 +243,7 @@ b{
 }
 
 .breadcrumb{
-	grid-column: 2/11;
+	grid-column: 1/9;
 	grid-row-start: 1;
 	text-align: left;
 	z-index: 1;
@@ -257,7 +257,7 @@ b{
 	z-index: 1;
 }
 .textmiddle{
-	grid-column: 1/13;
+	grid-column: 2/12;
 	vertical-align: middle;
 	grid-row-start: 3;
 	z-index: 1;
