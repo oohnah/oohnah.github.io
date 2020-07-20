@@ -279,7 +279,8 @@ b{
 	overflow: hidden;
 	margin: 0em;
 //	background: #eeeeee;
-	margin: .2em;
+//	margin: .2em;
+padding: 0;
 }
 .grid-item:hover > .grid-overlay-wrap{
 	top:0;
@@ -290,7 +291,7 @@ b{
 	top: -100%;
 	z-index: 2;
 	width: 100%;
-	height: 99%;
+	height: 99.4%;
 	align-items: center;
 	transition: .75s;
 	background-color: #2b2c77;

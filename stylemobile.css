@@ -20,7 +20,7 @@ body{
 	padding: 0;
 	margin: 0;
 	line-height: 1.75em;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 a{
@@ -30,6 +30,7 @@ a{
 
 p{
 	margin-top: .4em;
+	font-size: 1.25em;
 }
 
 p > a{
@@ -69,6 +70,7 @@ h1{
 	font-weight: 700;
   color: #2b2c77;
 	line-height: 1em;
+	font-size: 1.75em;
 }
 h2{
   margin-bottom: .1em;
@@ -317,7 +319,7 @@ b{
 
 .grid-overlay-text > h2, .grid-overlay-text > p, .grid-overlay-text > hr {
 	color: white;
-  line-height: 1.5em;
+  line-height: 1.25em;
 	margin-bottom: .25em;
 	margin-top: .25em;
 }
