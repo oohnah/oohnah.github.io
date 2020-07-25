@@ -15,12 +15,12 @@
 
 body{
   background-color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'sofia-pro', sans-serif;
   font-weight: 300;
 	padding: 0;
 	margin: 0;
-	line-height: 1.5em;
-  font-size: 24px;
+	line-height: 1.75em;
+  font-size: 20px;
 }
 
 a{
@@ -30,6 +30,7 @@ a{
 
 p{
 	margin-top: .4em;
+	font-size: 1.25em;
 }
 
 p > a{
@@ -69,6 +70,7 @@ h1{
 	font-weight: 700;
   color: #2b2c77;
 	line-height: 1em;
+	font-size: 1.75em;
 }
 h2{
   margin-bottom: .1em;
@@ -112,13 +114,13 @@ h3{
 
 /*-----------------------grid boxes-----------------*/
 .menu{
-  grid-column: 8/12;
+  grid-column: 7/13;
 	grid-row-start: 1;
   text-align: right;
 	z-index: 3;
 //	display: grid;
 	align-items: center;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 /*div.menu {
   padding-top: 3em;
@@ -241,7 +243,7 @@ b{
 }
 
 .breadcrumb{
-	grid-column: 2/11;
+	grid-column: 1/9;
 	grid-row-start: 1;
 	text-align: left;
 	z-index: 1;
@@ -255,7 +257,7 @@ b{
 	z-index: 1;
 }
 .textmiddle{
-	grid-column: 1/13;
+	grid-column: 2/12;
 	vertical-align: middle;
 	grid-row-start: 3;
 	z-index: 1;
@@ -317,7 +319,7 @@ b{
 
 .grid-overlay-text > h2, .grid-overlay-text > p, .grid-overlay-text > hr {
 	color: white;
-  line-height: 1.5em;
+  line-height: 1.25em;
 	margin-bottom: .25em;
 	margin-top: .25em;
 }
