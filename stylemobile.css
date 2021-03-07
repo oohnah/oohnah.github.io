@@ -186,25 +186,25 @@ b{
 /*-----------*/
 
 .introimg{
-  grid-column: 2/12;
+  grid-column: 1/13;
 	grid-row-start: 2;
   text-align: center;
 	z-index: 1;
 }
 
 .boxleft{
-	grid-column: 2/12;
+	grid-column: 1/13;
 }
 .boxright{
-	grid-column: 2/12;
+	grid-column: 1/13;
 }
 
 .boxfull{
-  grid-column: 2/12;
+  grid-column: 1/13;
 }
 
 .boxleft-tall, .boxright-top, .boxright-middle, .boxright-bottom{
-	grid-column: 2/12;
+	grid-column: 1/13;
 
 }
 
