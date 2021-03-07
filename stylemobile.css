@@ -203,6 +203,11 @@ b{
   grid-column: 2/12;
 }
 
+.boxleft-tall, .boxright-top, .boxright-middle, .boxright-bottom{
+	grid-column: 2/12;
+
+}
+
 
 .abouttext{
   grid-column: 2/12;

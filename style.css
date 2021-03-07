@@ -177,6 +177,27 @@ b{
   grid-column: 2/12;
 }
 
+.boxleft-tall{
+	grid-column: 2/7;
+  grid-row-start: 4;
+  grid-row-end: 7;
+}
+.boxright-top{
+	grid-column: 7/12;
+  grid-row-start: 4;
+  grid-row-end:  5;
+}
+.boxright-middle{
+	grid-column: 7/12;
+  grid-row-start: 5;
+  grid-row-end:  6;
+}
+.boxright-bottom{
+	grid-column: 7/12;
+  grid-row-start: 6;
+  grid-row-end:  7;
+}
+
 .imgthreefour{
 	grid-column: 1/8;
 	grid-row-start: 2;
