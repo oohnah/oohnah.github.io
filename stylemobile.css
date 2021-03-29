@@ -101,7 +101,7 @@ h3{
 }
 /*grid box padding*/
 .layout > div{
-  padding: 1em;
+  padding: .25em;
 }
 
 .layout > div.nav{
