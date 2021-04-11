@@ -137,7 +137,7 @@ h3{
 	transition: height .75s;
 }
 .nav.is-active{
-	height: 175px;
+	height: 200px;
 
 }
 .nav li{
