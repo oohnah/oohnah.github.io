@@ -7,25 +7,25 @@ function favorite () {
 
 	switch (input.toLowerCase()){
 		case "book":
-			aa="The Bartimaeus Trilogy";
+			aa="Babel by RF Kuang";
 			break;
 		case "color":
 			aa="Purple!";
 			break;
 		case "food":
-			aa="Ice cream, falafel, and fries";
+			aa="Ice cream, poke, and fries";
 			break;
 		case "cookie":
 			aa="Chocolate chip!";
 			break;
 		case "song":
-			aa="Right now, it's Monster by Dodie Clark";
+			aa="Lately I've been listening to The Sound of Letting Go by Orla Gartland";
 			break;
 		case "artist":
 			aa="Leigh Ellexson"
 			break;
 		case "tv show":
-			aa="Brooklyn 99"
+			aa="Game Changer, by Dropout.tv"
 			break;
 		case "dessert":
 			aa="Ice cream";
@@ -37,7 +37,7 @@ function favorite () {
 			aa="Right now, I'm pretty into Gotham";
 			break;
 		case "place":
-			aa="Bangkok, Thailand, or maybe Boston!"
+			aa="Brooklyn!"
 			break;
 		case "movie":
 			aa="Current favorite is Into the Spiderverse!";
@@ -49,31 +49,31 @@ function favorite () {
 			aa="Mulan";
 			break;
 		case "ice cream flavor":
-			aa="Edy's French Silk"
+			aa="I love anything chocolate, also partial to Ben and Jerry's Cherry Garcia"
 			break;
 		case "activity":
-			aa="Making art, or playing the ukulele"
+			aa="Making art, knitting, playing with my cat"
 			break;
 		case "chain restaurant":
 			aa="The Cheesecake Factory";
 			break;
 		case "famous person":
-			aa="Randy Pausch";
+			aa="Brennan Lee Mulligan";
 			break;
 		case "Hogwarts house":
-			aa="Gryffindor!";
+			aa="lol no";
 			break;
 		case "store":
-			aa="Target";
+			aa="local to me, I'm partial to Yu and Me Books and From Here to Sunday";
 			break;
 		case "clothing store":
-			aa="H&M";
+			aa="Thrifting! I've had good luck with Thred Up (NOT SPONSORED)";
 			break;
 		case "comic":
 			aa="1996 run of Nightwing, Impulse, and 90s Young Justice";
 			break;
 		case "webcomic":
-			aa="Always Human, Gloomverse";
+			aa="Always Human";
 			break;
 		case "superhero":
 			aa="Dick Grayson, AKA Nightwing";
@@ -91,10 +91,10 @@ function favorite () {
 			aa="Jen & Amy Hood of Hoodzpah";
 			break;
 		case "podcast":
-			aa="Design Matters with Debbie Millman";
+			aa="So many! In particular, 99% Invisible, Design Matters, Ologies, and This is Uncomfortable";
 			break;
 		case "starbucks drink":
-			aa="Peppermint mocha";
+			aa="I've stopped drinking Starbucks! We have pumpkin spice at home!";
 			break;
 		default:
 			aa="I guess I don't have a favorite one of those."
